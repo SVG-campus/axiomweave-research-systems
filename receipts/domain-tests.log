@@ -1,0 +1,28 @@
+test_affine_independent_symbolic_derivatives (test_domains.DomainTests.test_affine_independent_symbolic_derivatives) ... ok
+test_barrier_abstention (test_domains.DomainTests.test_barrier_abstention) ... ok
+test_certified_windows_and_spectra (test_domains.DomainTests.test_certified_windows_and_spectra) ... ok
+test_elliptic_exact_and_negative (test_domains.DomainTests.test_elliptic_exact_and_negative) ... ok
+test_every_catalog_entry_addressable (test_domains.DomainTests.test_every_catalog_entry_addressable) ... ok
+test_homology_independent_known_cases (test_domains.DomainTests.test_homology_independent_known_cases) ... ok
+test_official_sdk_runtime (test_domains.DomainTests.test_official_sdk_runtime) ... ok
+test_pari_descent (test_domains.DomainTests.test_pari_descent) ... ok
+test_ring_pairings (test_domains.DomainTests.test_ring_pairings) ... ok
+test_budget_type_and_range_controls (test_research_systems.Tests.test_budget_type_and_range_controls) ... ok
+test_cancellation_and_pruning (test_research_systems.Tests.test_cancellation_and_pruning) ... ok
+test_catalog_and_combinations (test_research_systems.Tests.test_catalog_and_combinations) ... ok
+test_composed_frozen_pipeline (test_research_systems.Tests.test_composed_frozen_pipeline) ... ok
+test_contract_mutations (test_research_systems.Tests.test_contract_mutations) ... ok
+test_hostile_expressions (test_research_systems.Tests.test_hostile_expressions) ... ok
+test_identity_with_independent_evaluation (test_research_systems.Tests.test_identity_with_independent_evaluation) ... ok
+test_interval_independent_samples (test_research_systems.Tests.test_interval_independent_samples) ... ok
+test_larger_exact_polynomial_compositions (test_research_systems.Tests.test_larger_exact_polynomial_compositions) ... ok
+test_protocol_runtime (test_research_systems.Tests.test_protocol_runtime) ... ok
+test_sat_census_independent_bitmask (test_research_systems.Tests.test_sat_census_independent_bitmask) ... ok
+test_search_settings_and_false_negative (test_research_systems.Tests.test_search_settings_and_false_negative) ... ok
+test_seeded_rational_identity_controls (test_research_systems.Tests.test_seeded_rational_identity_controls) ... ok
+test_validation_cannot_promote_correspondence (test_research_systems.Tests.test_validation_cannot_promote_correspondence) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 2.169s
+
+OK

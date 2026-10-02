@@ -1,0 +1,4 @@
+[mcp_servers.axiomweave-research-systems]
+command = "python"
+args = ["/ABSOLUTE/PATH/axiomweave-research-systems/scripts/research_mcp.py"]
+enabled = false

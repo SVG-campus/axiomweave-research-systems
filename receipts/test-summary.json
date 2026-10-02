@@ -1,0 +1,12 @@
+{
+  "cloud_tests": 23,
+  "cloud_failures": 0,
+  "cloud_skips": 0,
+  "official_sdk_verified": true,
+  "live_ide_discovery_verified": false,
+  "finite_cnf_census": 256,
+  "contract_pair_audits": 9025,
+  "composed_pipeline_trials": 40,
+  "seeded_rational_identity_cases": 300,
+  "claim_ceiling": "C1 bounded mechanics; contract pairs are not executed solvers"
+}

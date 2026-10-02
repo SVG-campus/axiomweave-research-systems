@@ -1,0 +1,2464 @@
+{
+  "version": 1,
+  "coverage_claim": "Finite seed ontology, not all possible methods or questions",
+  "methods": [
+    {
+      "id": "semantic_correspondence",
+      "name": "Semantic correspondence audit",
+      "family": "formulation",
+      "input_type": "problem",
+      "output_type": "specification",
+      "status": "bounded_backend",
+      "claim_ceiling": "C1 scoped mechanics when executed",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "specification",
+      "falsifier": "Independent disagreement, failed domain control, or scope exceeded: Compare seven explicit contract fields; semantic adjudication remains open.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "README.md",
+        "https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.pdf"
+      ],
+      "limits": "Compare seven explicit contract fields; semantic adjudication remains open.",
+      "adapter": "compare_contracts"
+    },
+    {
+      "id": "quantifier_audit",
+      "name": "Quantifier and domain audit",
+      "family": "formulation",
+      "input_type": "problem",
+      "output_type": "specification",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "specification",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "README.md",
+        "https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.pdf"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "dimensional_analysis",
+      "name": "Dimensional and unit analysis",
+      "family": "formulation",
+      "input_type": "problem",
+      "output_type": "specification",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "specification",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "README.md",
+        "https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.pdf"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "identifiability",
+      "name": "Identifiability and observability",
+      "family": "formulation",
+      "input_type": "problem",
+      "output_type": "specification",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "specification",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "README.md",
+        "https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.pdf"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "operationalization",
+      "name": "Operational definitions",
+      "family": "formulation",
+      "input_type": "problem",
+      "output_type": "specification",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "specification",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "README.md",
+        "https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.pdf"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "requirements",
+      "name": "Constraint and requirement elicitation",
+      "family": "formulation",
+      "input_type": "problem",
+      "output_type": "specification",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "specification",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "README.md",
+        "https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.pdf"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "causal_graph",
+      "name": "Causal graph construction",
+      "family": "formulation",
+      "input_type": "problem",
+      "output_type": "specification",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "specification",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "README.md",
+        "https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.pdf"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "decision_theory",
+      "name": "Utility and decision framing",
+      "family": "formulation",
+      "input_type": "problem",
+      "output_type": "specification",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "specification",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "README.md",
+        "https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.pdf"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "kernel_replay",
+      "name": "Formal kernel replay",
+      "family": "deduction",
+      "input_type": "proposition",
+      "output_type": "certificate",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "certificate",
+      "falsifier": "Historical root replay passed; independent checker and correspondence gates remain open.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://lean-lang.org/doc/reference/latest/Elaboration-and-Compilation/",
+        "https://www.cs.cmu.edu/~odonnell/15455-s17/turing-paper.pdf"
+      ],
+      "limits": "Historical root replay passed; independent checker and correspondence gates remain open."
+    },
+    {
+      "id": "induction",
+      "name": "Induction and structural recursion",
+      "family": "deduction",
+      "input_type": "proposition",
+      "output_type": "certificate",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "certificate",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://lean-lang.org/doc/reference/latest/Elaboration-and-Compilation/",
+        "https://www.cs.cmu.edu/~odonnell/15455-s17/turing-paper.pdf"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "contradiction",
+      "name": "Contradiction and contraposition",
+      "family": "deduction",
+      "input_type": "proposition",
+      "output_type": "certificate",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "certificate",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://lean-lang.org/doc/reference/latest/Elaboration-and-Compilation/",
+        "https://www.cs.cmu.edu/~odonnell/15455-s17/turing-paper.pdf"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "invariants",
+      "name": "Invariant and conservation proofs",
+      "family": "deduction",
+      "input_type": "proposition",
+      "output_type": "certificate",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "certificate",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://lean-lang.org/doc/reference/latest/Elaboration-and-Compilation/",
+        "https://www.cs.cmu.edu/~odonnell/15455-s17/turing-paper.pdf"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "reduction",
+      "name": "Reductions and equivalences",
+      "family": "deduction",
+      "input_type": "proposition",
+      "output_type": "certificate",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "certificate",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://lean-lang.org/doc/reference/latest/Elaboration-and-Compilation/",
+        "https://www.cs.cmu.edu/~odonnell/15455-s17/turing-paper.pdf"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "diagonalization",
+      "name": "Diagonalization",
+      "family": "deduction",
+      "input_type": "proposition",
+      "output_type": "certificate",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "certificate",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://lean-lang.org/doc/reference/latest/Elaboration-and-Compilation/",
+        "https://www.cs.cmu.edu/~odonnell/15455-s17/turing-paper.pdf"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "constructive_witness",
+      "name": "Constructive witness",
+      "family": "deduction",
+      "input_type": "proposition",
+      "output_type": "certificate",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "certificate",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://lean-lang.org/doc/reference/latest/Elaboration-and-Compilation/",
+        "https://www.cs.cmu.edu/~odonnell/15455-s17/turing-paper.pdf"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "proof_search",
+      "name": "Resolution and automated proof search",
+      "family": "deduction",
+      "input_type": "proposition",
+      "output_type": "certificate",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "certificate",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://lean-lang.org/doc/reference/latest/Elaboration-and-Compilation/",
+        "https://www.cs.cmu.edu/~odonnell/15455-s17/turing-paper.pdf"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "model_checking",
+      "name": "Finite-state model checking",
+      "family": "deduction",
+      "input_type": "proposition",
+      "output_type": "certificate",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "certificate",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://lean-lang.org/doc/reference/latest/Elaboration-and-Compilation/",
+        "https://www.cs.cmu.edu/~odonnell/15455-s17/turing-paper.pdf"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "abstract_interpretation",
+      "name": "Abstract interpretation",
+      "family": "deduction",
+      "input_type": "proposition",
+      "output_type": "certificate",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "certificate",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://lean-lang.org/doc/reference/latest/Elaboration-and-Compilation/",
+        "https://www.cs.cmu.edu/~odonnell/15455-s17/turing-paper.pdf"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "apriori",
+      "name": "Apriori with proved hereditary predicate",
+      "family": "search",
+      "input_type": "grammar",
+      "output_type": "candidate",
+      "status": "bounded_backend",
+      "claim_ceiling": "C1 scoped mechanics when executed",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "candidate",
+      "falsifier": "Independent disagreement, failed domain control, or scope exceeded: Exact bounded polynomial combinatorial search; preserves finite hit certificates.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "README.md",
+        "https://smt-lib.org/theories.shtml"
+      ],
+      "limits": "Exact bounded polynomial combinatorial search; preserves finite hit certificates.",
+      "adapter": "symbolic_search"
+    },
+    {
+      "id": "cancellation_search",
+      "name": "Cancellation-preserving combination search",
+      "family": "search",
+      "input_type": "grammar",
+      "output_type": "candidate",
+      "status": "bounded_backend",
+      "claim_ceiling": "C1 scoped mechanics when executed",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "candidate",
+      "falsifier": "Independent disagreement, failed domain control, or scope exceeded: Sum finite Laurent polynomials; rejects termwise singularity pruning as a general rule.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "README.md",
+        "https://smt-lib.org/theories.shtml"
+      ],
+      "limits": "Sum finite Laurent polynomials; rejects termwise singularity pruning as a general rule.",
+      "adapter": "check_cancellation"
+    },
+    {
+      "id": "exhaustive",
+      "name": "Bounded exhaustive enumeration",
+      "family": "search",
+      "input_type": "grammar",
+      "output_type": "candidate",
+      "status": "bounded_backend",
+      "claim_ceiling": "C1 scoped mechanics when executed",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "candidate",
+      "falsifier": "Independent disagreement, failed domain control, or scope exceeded: Exact bounded polynomial combinatorial search; preserves finite hit certificates.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "README.md",
+        "https://smt-lib.org/theories.shtml"
+      ],
+      "limits": "Exact bounded polynomial combinatorial search; preserves finite hit certificates.",
+      "adapter": "symbolic_search"
+    },
+    {
+      "id": "beam",
+      "name": "Beam search",
+      "family": "search",
+      "input_type": "grammar",
+      "output_type": "candidate",
+      "status": "bounded_backend",
+      "claim_ceiling": "C1 scoped mechanics when executed",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "candidate",
+      "falsifier": "Independent disagreement, failed domain control, or scope exceeded: Exact bounded polynomial combinatorial search; preserves finite hit certificates.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "README.md",
+        "https://smt-lib.org/theories.shtml"
+      ],
+      "limits": "Exact bounded polynomial combinatorial search; preserves finite hit certificates.",
+      "adapter": "symbolic_search"
+    },
+    {
+      "id": "branch_bound",
+      "name": "Branch and bound",
+      "family": "search",
+      "input_type": "grammar",
+      "output_type": "candidate",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "candidate",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "README.md",
+        "https://smt-lib.org/theories.shtml"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "dynamic_programming",
+      "name": "Dynamic programming",
+      "family": "search",
+      "input_type": "grammar",
+      "output_type": "candidate",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "candidate",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "README.md",
+        "https://smt-lib.org/theories.shtml"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "constraint_propagation",
+      "name": "Constraint propagation",
+      "family": "search",
+      "input_type": "grammar",
+      "output_type": "candidate",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "candidate",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "README.md",
+        "https://smt-lib.org/theories.shtml"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "sat_smt",
+      "name": "SAT and SMT solving",
+      "family": "search",
+      "input_type": "grammar",
+      "output_type": "candidate",
+      "status": "bounded_backend",
+      "claim_ceiling": "C1 scoped mechanics when executed",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "candidate",
+      "falsifier": "Independent disagreement, failed domain control, or scope exceeded: Exhaustive finite CNF decision at most8 variables; no complexity theorem.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "README.md",
+        "https://smt-lib.org/theories.shtml"
+      ],
+      "limits": "Exhaustive finite CNF decision at most8 variables; no complexity theorem.",
+      "adapter": "check_finite_cnf"
+    },
+    {
+      "id": "cegis",
+      "name": "Counterexample-guided synthesis",
+      "family": "search",
+      "input_type": "grammar",
+      "output_type": "candidate",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "candidate",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "README.md",
+        "https://smt-lib.org/theories.shtml"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "egraph",
+      "name": "Equality saturation",
+      "family": "search",
+      "input_type": "grammar",
+      "output_type": "candidate",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "candidate",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "README.md",
+        "https://smt-lib.org/theories.shtml"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "symmetry_reduction",
+      "name": "Symmetry reduction",
+      "family": "search",
+      "input_type": "grammar",
+      "output_type": "candidate",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "candidate",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "README.md",
+        "https://smt-lib.org/theories.shtml"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "meet_middle",
+      "name": "Meet in the middle",
+      "family": "search",
+      "input_type": "grammar",
+      "output_type": "candidate",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "candidate",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "README.md",
+        "https://smt-lib.org/theories.shtml"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "local_search",
+      "name": "Local and tabu search",
+      "family": "search",
+      "input_type": "grammar",
+      "output_type": "candidate",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "candidate",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "README.md",
+        "https://smt-lib.org/theories.shtml"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "evolutionary",
+      "name": "Evolutionary search",
+      "family": "search",
+      "input_type": "grammar",
+      "output_type": "candidate",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "candidate",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "README.md",
+        "https://smt-lib.org/theories.shtml"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "mcts",
+      "name": "Monte Carlo tree search",
+      "family": "search",
+      "input_type": "grammar",
+      "output_type": "candidate",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "candidate",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "README.md",
+        "https://smt-lib.org/theories.shtml"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "program_synthesis",
+      "name": "Typed program synthesis",
+      "family": "search",
+      "input_type": "grammar",
+      "output_type": "candidate",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "candidate",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "README.md",
+        "https://smt-lib.org/theories.shtml"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "exact_arithmetic",
+      "name": "Exact rational arithmetic",
+      "family": "algebra",
+      "input_type": "symbolic",
+      "output_type": "identity",
+      "status": "bounded_backend",
+      "claim_ceiling": "C1 scoped mechanics when executed",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "identity",
+      "falsifier": "Independent disagreement, failed domain control, or scope exceeded: Check a restricted polynomial identity using exact normal forms.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://doc.sagemath.org/html/en/reference/arithmetic_curves/index.html"
+      ],
+      "limits": "Check a restricted polynomial identity using exact normal forms.",
+      "adapter": "check_identity"
+    },
+    {
+      "id": "polynomial_identity",
+      "name": "Polynomial identity certificates",
+      "family": "algebra",
+      "input_type": "symbolic",
+      "output_type": "identity",
+      "status": "bounded_backend",
+      "claim_ceiling": "C1 scoped mechanics when executed",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "identity",
+      "falsifier": "Independent disagreement, failed domain control, or scope exceeded: Check a restricted polynomial identity using exact normal forms.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://doc.sagemath.org/html/en/reference/arithmetic_curves/index.html"
+      ],
+      "limits": "Check a restricted polynomial identity using exact normal forms.",
+      "adapter": "check_identity"
+    },
+    {
+      "id": "groebner",
+      "name": "Groebner basis elimination",
+      "family": "algebra",
+      "input_type": "symbolic",
+      "output_type": "identity",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "identity",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://doc.sagemath.org/html/en/reference/arithmetic_curves/index.html"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "resultants",
+      "name": "Resultants and elimination",
+      "family": "algebra",
+      "input_type": "symbolic",
+      "output_type": "identity",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "identity",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://doc.sagemath.org/html/en/reference/arithmetic_curves/index.html"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "linear_algebra",
+      "name": "Exact linear algebra",
+      "family": "algebra",
+      "input_type": "symbolic",
+      "output_type": "identity",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "identity",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://doc.sagemath.org/html/en/reference/arithmetic_curves/index.html"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "representation_theory",
+      "name": "Representation theoretic decomposition",
+      "family": "algebra",
+      "input_type": "symbolic",
+      "output_type": "identity",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "identity",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://doc.sagemath.org/html/en/reference/arithmetic_curves/index.html"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "group_actions",
+      "name": "Group actions and quotients",
+      "family": "algebra",
+      "input_type": "symbolic",
+      "output_type": "identity",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "identity",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://doc.sagemath.org/html/en/reference/arithmetic_curves/index.html"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "diophantine",
+      "name": "Diophantine descent",
+      "family": "algebra",
+      "input_type": "symbolic",
+      "output_type": "identity",
+      "status": "bounded_backend",
+      "claim_ceiling": "C1 scoped mechanics when executed",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "identity",
+      "falsifier": "Independent disagreement, failed domain control, or scope exceeded: Exact doubling and two independent finite-field counts; scoped Lutz-Nagell inference.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://doc.sagemath.org/html/en/reference/arithmetic_curves/index.html"
+      ],
+      "limits": "Exact doubling and two independent finite-field counts; scoped Lutz-Nagell inference.",
+      "adapter": "certify_elliptic_example"
+    },
+    {
+      "id": "selmer",
+      "name": "Selmer and rank bounds",
+      "family": "algebra",
+      "input_type": "symbolic",
+      "output_type": "identity",
+      "status": "optional_backend",
+      "claim_ceiling": "C1 scoped mechanics when executed",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "identity",
+      "falsifier": "Independent disagreement, failed domain control, or scope exceeded: Optional PARI descent rank bounds and conductor; fixed program, no supplied code.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://doc.sagemath.org/html/en/reference/arithmetic_curves/index.html"
+      ],
+      "limits": "Optional PARI descent rank bounds and conductor; fixed program, no supplied code.",
+      "adapter": "certify_elliptic_descent"
+    },
+    {
+      "id": "height_pairing",
+      "name": "Canonical heights and independence",
+      "family": "algebra",
+      "input_type": "symbolic",
+      "output_type": "identity",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "identity",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://doc.sagemath.org/html/en/reference/arithmetic_curves/index.html"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "modular",
+      "name": "Modular forms and local-global arithmetic",
+      "family": "algebra",
+      "input_type": "symbolic",
+      "output_type": "identity",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "identity",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://doc.sagemath.org/html/en/reference/arithmetic_curves/index.html"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "interval",
+      "name": "Interval and ball enclosure",
+      "family": "analysis",
+      "input_type": "analytic",
+      "output_type": "bound",
+      "status": "bounded_backend",
+      "claim_ceiling": "C1 scoped mechanics when executed",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "bound",
+      "falsifier": "Independent disagreement, failed domain control, or scope exceeded: Exact rational arithmetic enclosure; not zeta or transcendental proof.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://arxiv.org/abs/2609.35406v2",
+        "https://flintlib.org/doc/arb.html"
+      ],
+      "limits": "Exact rational arithmetic enclosure; not zeta or transcendental proof.",
+      "adapter": "interval_operation"
+    },
+    {
+      "id": "root_count",
+      "name": "Argument principle and zero counts",
+      "family": "analysis",
+      "input_type": "analytic",
+      "output_type": "bound",
+      "status": "optional_backend",
+      "claim_ceiling": "C1 scoped mechanics when executed",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "bound",
+      "falsifier": "Independent disagreement, failed domain control, or scope exceeded: FLINT total-zero counts and root enclosures in bounded height windows; optional backend.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://arxiv.org/abs/2609.35406v2",
+        "https://flintlib.org/doc/arb.html"
+      ],
+      "limits": "FLINT total-zero counts and root enclosures in bounded height windows; optional backend.",
+      "adapter": "certify_zeta_window"
+    },
+    {
+      "id": "energy_estimates",
+      "name": "Energy and coercivity estimates",
+      "family": "analysis",
+      "input_type": "analytic",
+      "output_type": "bound",
+      "status": "bounded_backend",
+      "claim_ceiling": "C1 scoped mechanics when executed",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "bound",
+      "falsifier": "Independent disagreement, failed domain control, or scope exceeded: Fixed affine Navier-Stokes ansatz with pressure cancellation and energy obstruction.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://arxiv.org/abs/2609.35406v2",
+        "https://flintlib.org/doc/arb.html"
+      ],
+      "limits": "Fixed affine Navier-Stokes ansatz with pressure cancellation and energy obstruction.",
+      "adapter": "audit_affine_pde"
+    },
+    {
+      "id": "fixed_point",
+      "name": "Fixed point and contraction",
+      "family": "analysis",
+      "input_type": "analytic",
+      "output_type": "bound",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "bound",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://arxiv.org/abs/2609.35406v2",
+        "https://flintlib.org/doc/arb.html"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "compactness",
+      "name": "Compactness and weak convergence",
+      "family": "analysis",
+      "input_type": "analytic",
+      "output_type": "bound",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "bound",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://arxiv.org/abs/2609.35406v2",
+        "https://flintlib.org/doc/arb.html"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "regularity",
+      "name": "Regularity and bootstrap",
+      "family": "analysis",
+      "input_type": "analytic",
+      "output_type": "bound",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "bound",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://arxiv.org/abs/2609.35406v2",
+        "https://flintlib.org/doc/arb.html"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "blowup",
+      "name": "Blowup scaling and concentration",
+      "family": "analysis",
+      "input_type": "analytic",
+      "output_type": "bound",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "bound",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://arxiv.org/abs/2609.35406v2",
+        "https://flintlib.org/doc/arb.html"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "perturbation",
+      "name": "Perturbation and residual correction",
+      "family": "analysis",
+      "input_type": "analytic",
+      "output_type": "bound",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "bound",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://arxiv.org/abs/2609.35406v2",
+        "https://flintlib.org/doc/arb.html"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "jets",
+      "name": "Jet and all-order smoothness audit",
+      "family": "analysis",
+      "input_type": "analytic",
+      "output_type": "bound",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "bound",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://arxiv.org/abs/2609.35406v2",
+        "https://flintlib.org/doc/arb.html"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "spectral",
+      "name": "Spectral and operator analysis",
+      "family": "analysis",
+      "input_type": "analytic",
+      "output_type": "bound",
+      "status": "optional_backend",
+      "claim_ceiling": "C1 scoped mechanics when executed",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "bound",
+      "falsifier": "Independent disagreement, failed domain control, or scope exceeded: Ball-enclosed Dirichlet chain spectra; optional backend; no gauge theory proof.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://arxiv.org/abs/2609.35406v2",
+        "https://flintlib.org/doc/arb.html"
+      ],
+      "limits": "Ball-enclosed Dirichlet chain spectra; optional backend; no gauge theory proof.",
+      "adapter": "check_spectral_limit"
+    },
+    {
+      "id": "renormalization",
+      "name": "Renormalization and multiscale limits",
+      "family": "analysis",
+      "input_type": "analytic",
+      "output_type": "bound",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "bound",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://arxiv.org/abs/2609.35406v2",
+        "https://flintlib.org/doc/arb.html"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "asymptotics",
+      "name": "Asymptotic and error estimates",
+      "family": "analysis",
+      "input_type": "analytic",
+      "output_type": "bound",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "bound",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://arxiv.org/abs/2609.35406v2",
+        "https://flintlib.org/doc/arb.html"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "computer_assisted",
+      "name": "Computer-assisted analytic proof",
+      "family": "analysis",
+      "input_type": "analytic",
+      "output_type": "bound",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "bound",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://arxiv.org/abs/2609.35406v2",
+        "https://flintlib.org/doc/arb.html"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "homology",
+      "name": "Homology and chain complexes",
+      "family": "geometry",
+      "input_type": "geometric",
+      "output_type": "geometric_certificate",
+      "status": "bounded_backend",
+      "claim_ceiling": "C1 scoped mechanics when executed",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "geometric_certificate",
+      "falsifier": "Independent disagreement, failed domain control, or scope exceeded: Exact rational simplicial homology with boundary-squared controls; no fundamental group.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "README.md"
+      ],
+      "limits": "Exact rational simplicial homology with boundary-squared controls; no fundamental group.",
+      "adapter": "check_chain_complex"
+    },
+    {
+      "id": "homotopy",
+      "name": "Fundamental group and homotopy",
+      "family": "geometry",
+      "input_type": "geometric",
+      "output_type": "geometric_certificate",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "geometric_certificate",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "README.md"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "cycle_class",
+      "name": "Cycle class and intersection theory",
+      "family": "geometry",
+      "input_type": "geometric",
+      "output_type": "geometric_certificate",
+      "status": "bounded_backend",
+      "claim_ceiling": "C1 scoped mechanics when executed",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "geometric_certificate",
+      "falsifier": "Independent disagreement, failed domain control, or scope exceeded: Exact intersection pairing for the assumed cohomology ring of (P1)^n.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "README.md"
+      ],
+      "limits": "Exact intersection pairing for the assumed cohomology ring of (P1)^n.",
+      "adapter": "check_product_cycles"
+    },
+    {
+      "id": "geometric_flow",
+      "name": "Geometric flow",
+      "family": "geometry",
+      "input_type": "geometric",
+      "output_type": "geometric_certificate",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "geometric_certificate",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "README.md"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "deformation",
+      "name": "Deformation and moduli",
+      "family": "geometry",
+      "input_type": "geometric",
+      "output_type": "geometric_certificate",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "geometric_certificate",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "README.md"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "localization",
+      "name": "Localization and sheaf gluing",
+      "family": "geometry",
+      "input_type": "geometric",
+      "output_type": "geometric_certificate",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "geometric_certificate",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "README.md"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "convex_duality",
+      "name": "Convex duality and certificates",
+      "family": "optimization",
+      "input_type": "objective",
+      "output_type": "optimum_bound",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "optimum_bound",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://web.stanford.edu/~boyd/cvxbook/"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "linear_programming",
+      "name": "Linear programming",
+      "family": "optimization",
+      "input_type": "objective",
+      "output_type": "optimum_bound",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "optimum_bound",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://web.stanford.edu/~boyd/cvxbook/"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "integer_programming",
+      "name": "Integer programming",
+      "family": "optimization",
+      "input_type": "objective",
+      "output_type": "optimum_bound",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "optimum_bound",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://web.stanford.edu/~boyd/cvxbook/"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "semidefinite",
+      "name": "Semidefinite and sum of squares",
+      "family": "optimization",
+      "input_type": "objective",
+      "output_type": "optimum_bound",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "optimum_bound",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://web.stanford.edu/~boyd/cvxbook/"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "optimal_control",
+      "name": "Optimal control",
+      "family": "optimization",
+      "input_type": "objective",
+      "output_type": "optimum_bound",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "optimum_bound",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://web.stanford.edu/~boyd/cvxbook/"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "robust_optimization",
+      "name": "Robust optimization",
+      "family": "optimization",
+      "input_type": "objective",
+      "output_type": "optimum_bound",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "optimum_bound",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://web.stanford.edu/~boyd/cvxbook/"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "pareto",
+      "name": "Pareto tradeoffs",
+      "family": "optimization",
+      "input_type": "objective",
+      "output_type": "optimum_bound",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "optimum_bound",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://web.stanford.edu/~boyd/cvxbook/"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "bayesian_optimization",
+      "name": "Bayesian optimization",
+      "family": "optimization",
+      "input_type": "objective",
+      "output_type": "optimum_bound",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "optimum_bound",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://web.stanford.edu/~boyd/cvxbook/"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "randomized_trial",
+      "name": "Randomized experiment",
+      "family": "empirical",
+      "input_type": "observations",
+      "output_type": "empirical_estimate",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "empirical_estimate",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://www.pywhy.org/dowhy/v0.13/user_guide/causal_tasks/estimating_causal_effects/index.html"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "quasi_experiment",
+      "name": "Quasi-experiment",
+      "family": "empirical",
+      "input_type": "observations",
+      "output_type": "empirical_estimate",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "empirical_estimate",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://www.pywhy.org/dowhy/v0.13/user_guide/causal_tasks/estimating_causal_effects/index.html"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "causal_identification",
+      "name": "Causal identification and adjustment",
+      "family": "empirical",
+      "input_type": "observations",
+      "output_type": "empirical_estimate",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "empirical_estimate",
+      "falsifier": "Observational prediction cannot identify interventions without assumptions.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://www.pywhy.org/dowhy/v0.13/user_guide/causal_tasks/estimating_causal_effects/index.html"
+      ],
+      "limits": "Observational prediction cannot identify interventions without assumptions."
+    },
+    {
+      "id": "bayesian_inference",
+      "name": "Bayesian inference",
+      "family": "empirical",
+      "input_type": "observations",
+      "output_type": "empirical_estimate",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "empirical_estimate",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://www.pywhy.org/dowhy/v0.13/user_guide/causal_tasks/estimating_causal_effects/index.html"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "frequentist",
+      "name": "Frequentist estimation and tests",
+      "family": "empirical",
+      "input_type": "observations",
+      "output_type": "empirical_estimate",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "empirical_estimate",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://www.pywhy.org/dowhy/v0.13/user_guide/causal_tasks/estimating_causal_effects/index.html"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "sequential",
+      "name": "Sequential testing",
+      "family": "empirical",
+      "input_type": "observations",
+      "output_type": "empirical_estimate",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "empirical_estimate",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://www.pywhy.org/dowhy/v0.13/user_guide/causal_tasks/estimating_causal_effects/index.html"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "active_learning",
+      "name": "Active learning and experiment design",
+      "family": "empirical",
+      "input_type": "observations",
+      "output_type": "empirical_estimate",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "empirical_estimate",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://www.pywhy.org/dowhy/v0.13/user_guide/causal_tasks/estimating_causal_effects/index.html"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "simulation",
+      "name": "Simulation and Monte Carlo",
+      "family": "empirical",
+      "input_type": "observations",
+      "output_type": "empirical_estimate",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "empirical_estimate",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://www.pywhy.org/dowhy/v0.13/user_guide/causal_tasks/estimating_causal_effects/index.html"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "ablation",
+      "name": "Ablation and negative controls",
+      "family": "empirical",
+      "input_type": "observations",
+      "output_type": "empirical_estimate",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "empirical_estimate",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://www.pywhy.org/dowhy/v0.13/user_guide/causal_tasks/estimating_causal_effects/index.html"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "sensitivity",
+      "name": "Sensitivity and robustness",
+      "family": "empirical",
+      "input_type": "observations",
+      "output_type": "empirical_estimate",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "empirical_estimate",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://www.pywhy.org/dowhy/v0.13/user_guide/causal_tasks/estimating_causal_effects/index.html"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "forecasting",
+      "name": "Forecasting with untouched evaluation",
+      "family": "empirical",
+      "input_type": "observations",
+      "output_type": "empirical_estimate",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "empirical_estimate",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://www.pywhy.org/dowhy/v0.13/user_guide/causal_tasks/estimating_causal_effects/index.html"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "system_identification",
+      "name": "System identification",
+      "family": "empirical",
+      "input_type": "observations",
+      "output_type": "empirical_estimate",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "empirical_estimate",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://www.pywhy.org/dowhy/v0.13/user_guide/causal_tasks/estimating_causal_effects/index.html"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "decomposition",
+      "name": "Modular decomposition",
+      "family": "engineering",
+      "input_type": "system",
+      "output_type": "validated_artifact",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "validated_artifact",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://modelcontextprotocol.io/specification/2025-11-25/basic/lifecycle",
+        "README.md"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "differential_testing",
+      "name": "Differential testing",
+      "family": "engineering",
+      "input_type": "system",
+      "output_type": "validated_artifact",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "validated_artifact",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://modelcontextprotocol.io/specification/2025-11-25/basic/lifecycle",
+        "README.md"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "property_testing",
+      "name": "Property and metamorphic tests",
+      "family": "engineering",
+      "input_type": "system",
+      "output_type": "validated_artifact",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "validated_artifact",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://modelcontextprotocol.io/specification/2025-11-25/basic/lifecycle",
+        "README.md"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "fault_injection",
+      "name": "Fault injection",
+      "family": "engineering",
+      "input_type": "system",
+      "output_type": "validated_artifact",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "validated_artifact",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://modelcontextprotocol.io/specification/2025-11-25/basic/lifecycle",
+        "README.md"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "reproducibility",
+      "name": "Pinned reproducible replay",
+      "family": "engineering",
+      "input_type": "system",
+      "output_type": "validated_artifact",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "validated_artifact",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://modelcontextprotocol.io/specification/2025-11-25/basic/lifecycle",
+        "README.md"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "provenance",
+      "name": "Provenance and evidence ledger",
+      "family": "engineering",
+      "input_type": "system",
+      "output_type": "validated_artifact",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "validated_artifact",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://modelcontextprotocol.io/specification/2025-11-25/basic/lifecycle",
+        "README.md"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "adversarial_review",
+      "name": "Adversarial review",
+      "family": "engineering",
+      "input_type": "system",
+      "output_type": "validated_artifact",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "validated_artifact",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://modelcontextprotocol.io/specification/2025-11-25/basic/lifecycle",
+        "README.md"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "portfolio_routing",
+      "name": "Budgeted solver portfolio",
+      "family": "engineering",
+      "input_type": "system",
+      "output_type": "validated_artifact",
+      "status": "bounded_backend",
+      "claim_ceiling": "C1 scoped mechanics when executed",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "validated_artifact",
+      "falsifier": "Independent disagreement, failed domain control, or scope exceeded: Select a proposed portfolio with missing backends disclosed.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://modelcontextprotocol.io/specification/2025-11-25/basic/lifecycle",
+        "README.md"
+      ],
+      "limits": "Select a proposed portfolio with missing backends disclosed.",
+      "adapter": "route_question"
+    },
+    {
+      "id": "information_retrieval",
+      "name": "Source retrieval and triangulation",
+      "family": "engineering",
+      "input_type": "system",
+      "output_type": "validated_artifact",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "validated_artifact",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://modelcontextprotocol.io/specification/2025-11-25/basic/lifecycle",
+        "README.md"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    },
+    {
+      "id": "analogy",
+      "name": "Analogy and transfer hypothesis",
+      "family": "engineering",
+      "input_type": "system",
+      "output_type": "validated_artifact",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "validated_artifact",
+      "falsifier": "A hypothesis generator; analogy does not transfer a proof.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://modelcontextprotocol.io/specification/2025-11-25/basic/lifecycle",
+        "README.md"
+      ],
+      "limits": "A hypothesis generator; analogy does not transfer a proof."
+    },
+    {
+      "id": "human_review",
+      "name": "Independent domain review",
+      "family": "engineering",
+      "input_type": "system",
+      "output_type": "validated_artifact",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 proposed route",
+      "assumptions": [
+        "Typed finite task contract",
+        "Domain assumptions stated and checked"
+      ],
+      "certificate": "validated_artifact",
+      "falsifier": "Independent checker disagreement, missing assumption, or failed negative control.",
+      "budget": {
+        "max_candidates": 512,
+        "max_rounds": 8,
+        "wall_seconds": 30
+      },
+      "stop_rule": "Abstain at adapter cap (see implementation), unsupported domain, failed certificate or unknown prerequisite.",
+      "evidence": [
+        "https://modelcontextprotocol.io/specification/2025-11-25/basic/lifecycle",
+        "README.md"
+      ],
+      "limits": "Catalog entry; specialized solver and independent evaluator still required."
+    }
+  ],
+  "unexplored": [
+    "Noncomputable questions",
+    "Undecidable general truth and termination",
+    "Unspecified subjective goals",
+    "Methods outside this seed taxonomy",
+    "Higher-order and stochastic combinations not executed",
+    "Specialized backends marked catalog_only"
+  ]
+}

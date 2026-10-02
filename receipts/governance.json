@@ -1,0 +1,126 @@
+{
+  "timestamp_utc": "2026-10-02T23:55:53.319062+00:00",
+  "independent_reviewer_instantiated": false,
+  "records": [
+    {
+      "id": 1,
+      "kind": "Scope",
+      "statement": "Use the intended symbolic Apriori technique, separate from finance code.",
+      "evidence": "README.md",
+      "claim_ceiling": "C0 scope",
+      "falsifier": "Any backend silently routes into finance",
+      "budget": "No trading; source-only bounded tools",
+      "stop_rule": "Stop at stated cap, failed negative control, unsupported prerequisite or unresolved independent-review gate."
+    },
+    {
+      "id": 2,
+      "kind": "Architecture",
+      "statement": "Improve the supplied eight-engine proposal through scoped executable adapters.",
+      "evidence": "COMPARISON.md",
+      "claim_ceiling": "C1 runtime",
+      "falsifier": "Named engine lacks an executable adapter but is called implemented",
+      "budget": "21 tools; 95 finite contracts",
+      "stop_rule": "Stop at stated cap, failed negative control, unsupported prerequisite or unresolved independent-review gate."
+    },
+    {
+      "id": 3,
+      "kind": "Public release",
+      "statement": "Publish a new clean public source tree; exclude private history and cloud identity.",
+      "evidence": "README.md",
+      "claim_ceiling": "C1 provenance",
+      "falsifier": "Sensitive identifier or private conversation enters tracked public files",
+      "budget": "Source and sanitized research receipts only",
+      "stop_rule": "Stop at stated cap, failed negative control, unsupported prerequisite or unresolved independent-review gate."
+    },
+    {
+      "id": 4,
+      "kind": "Route",
+      "statement": "Use one writer and the supplied external review snapshot; independent reviewer absent.",
+      "evidence": "SYSTEM_ARCHITECTURE.md",
+      "claim_ceiling": "C0 route",
+      "falsifier": "Snapshot agreement is represented as independent replication",
+      "budget": "Independent review gate stays open",
+      "stop_rule": "Stop at stated cap, failed negative control, unsupported prerequisite or unresolved independent-review gate."
+    },
+    {
+      "id": 5,
+      "kind": "MCP verification",
+      "statement": "Use an official SDK client to verify protocol calls; do not assert IDE discovery.",
+      "evidence": "receipts/domain-tests.log",
+      "claim_ceiling": "C1 runtime",
+      "falsifier": "Tool discovery fails through SDK or unsupported backend silently executes",
+      "budget": "Smallest task-scoped profile; default off",
+      "stop_rule": "Stop at stated cap, failed negative control, unsupported prerequisite or unresolved independent-review gate."
+    },
+    {
+      "id": 6,
+      "kind": "Research loop",
+      "statement": "Expand frozen finite examples three rounds, followed by final controls.",
+      "evidence": "receipts/domain-research-loop.json",
+      "claim_ceiling": "C1 bounded execution",
+      "falsifier": "Negative control fails or a finite result becomes a universal theorem",
+      "budget": "Three rounds; no all-method-discovery claim",
+      "stop_rule": "Stop at stated cap, failed negative control, unsupported prerequisite or unresolved independent-review gate."
+    },
+    {
+      "id": 7,
+      "kind": "Numerical trust",
+      "statement": "Use documented FLINT/Arb zero/count guarantees; no silent floating-point fallback.",
+      "evidence": "RESULTS.md",
+      "claim_ceiling": "C1 certified-library execution",
+      "falsifier": "Ambiguous boundary returns a spurious exact count",
+      "budget": "Height<=200; precision64..512; no kernel-proof claim",
+      "stop_rule": "Stop at stated cap, failed negative control, unsupported prerequisite or unresolved independent-review gate."
+    },
+    {
+      "id": 8,
+      "kind": "Arithmetic trust",
+      "statement": "Use exact curve arithmetic and separately report PARI descent bounds.",
+      "evidence": "receipts/pari-curve.log",
+      "claim_ceiling": "C1 backend execution",
+      "falsifier": "Off-curve double, count disagreement or rank bounds disagree",
+      "budget": "30-second fixed GP program; no supplied code",
+      "stop_rule": "Stop at stated cap, failed negative control, unsupported prerequisite or unresolved independent-review gate."
+    },
+    {
+      "id": 9,
+      "kind": "Pruning",
+      "statement": "Require hereditary rejection; keep singular cancellation pairs.",
+      "evidence": "scripts/test_research_systems.py",
+      "claim_ceiling": "C1 finite lattice",
+      "falsifier": "An accepted child has a rejected parent",
+      "budget": "At most8 atoms; outside-lattice proof remains open",
+      "stop_rule": "Stop at stated cap, failed negative control, unsupported prerequisite or unresolved independent-review gate."
+    },
+    {
+      "id": 10,
+      "kind": "Formal replay",
+      "statement": "Pin source/toolchain/reference and separate compiler, checker and correspondence.",
+      "evidence": "RESULTS.md",
+      "claim_ceiling": "C1 replay mechanics",
+      "falsifier": "sorryAx, modified trusted statement, timeout or absent terminal checker exit",
+      "budget": "Disposable cloud machine <=90min; max2 repairs; checkpoint before deadline",
+      "stop_rule": "Stop at stated cap, failed negative control, unsupported prerequisite or unresolved independent-review gate."
+    },
+    {
+      "id": 11,
+      "kind": "Cleanup",
+      "statement": "Export and verify GitHub before deleting only newly created cloud resources.",
+      "evidence": "OWNER_PLAYBOOK.md",
+      "claim_ceiling": "C1 operation receipts",
+      "falsifier": "New task resource remains or unrelated resource is removed",
+      "budget": "Preserve existing VMs and projects; no cleanup-policy bypass",
+      "stop_rule": "Stop at stated cap, failed negative control, unsupported prerequisite or unresolved independent-review gate."
+    },
+    {
+      "id": 12,
+      "kind": "Stop rule",
+      "statement": "Finite saturation cannot establish all possible solution systems.",
+      "evidence": "receipts/coverage-loop.json",
+      "claim_ceiling": "C1 finite coverage",
+      "falsifier": "Claim exhaustive coverage beyond the frozen ontology",
+      "budget": "Three non-improving sweeps; explicit unexplored space",
+      "stop_rule": "Stop at stated cap, failed negative control, unsupported prerequisite or unresolved independent-review gate."
+    }
+  ]
+}
