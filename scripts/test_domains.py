@@ -42,8 +42,21 @@ class DomainTests(unittest.TestCase):
             async with stdio_client(StdioServerParameters(command=sys.executable,args=[str(M.R.ROOT/'scripts/research_mcp.py')])) as (read,write):
                 async with ClientSession(read,write) as client:
                     await client.initialize();tools=await client.list_tools();self.assertEqual(len(tools.tools),len(M.TOOLS))
-                    for name,args in [('certify_elliptic_example',{}),('check_chain_complex',{'facets':[[0,1],[1,2],[0,2]]}),('execute_method',{'method_id':'human_review'}),('backend_capabilities',{})]:
+                    examples={
+                      'method_catalog':{},'route_question':{'question_type':'pde'},'symbolic_search':{'target':'3*b-2*a'},
+                      'check_identity':{'left':'a+a','right':'2*a'},'check_cancellation':{'terms':[[[-1,'1']],[[-1,'-1']]]},
+                      'interval_operation':{'left':['1','2'],'right':['2','3'],'operation':'mul'},'check_finite_cnf':{'variables':1,'clauses':[[1]]},
+                      'compare_contracts':{'reference':{x:x for x in M.R.FIELDS},'submission':{x:x for x in M.R.FIELDS}},
+                      'audit_pruning':{'atoms':2,'accepted_masks':[0,3]},'validation_status':{},'certify_elliptic_descent':{},
+                      'certify_zeta_window':{'heights':[15,30]},'certify_elliptic_example':{},
+                      'check_chain_complex':{'facets':[[0,1],[1,2],[0,2]]},'check_product_cycles':{'factors':3},
+                      'check_spectral_limit':{'grid_sizes':[8,16]},'audit_affine_pde':{},'audit_complexity_barriers':{},
+                      'execute_method':{'method_id':'human_review'},'run_research_loop':{'rounds':1},'backend_capabilities':{}}
+                    self.assertEqual(set(examples),set(M.BY))
+                    for name,args in examples.items():
                         out=await client.call_tool(name,args);self.assertFalse(out.isError);json.loads(out.content[0].text)
+                    for name,args in [('certify_elliptic_descent',{'A':True}),('symbolic_search',{'target':"__import__('os')"}),('run_research_loop',{'rounds':4})]:
+                        out=await client.call_tool(name,args);self.assertTrue(out.isError)
         try:import mcp
         except ImportError:self.skipTest('Optional official MCP SDK absent')
         asyncio.run(check())

@@ -100,8 +100,9 @@ class Tests(unittest.TestCase):
         status=M.call('validation_status',{})
         self.assertIsInstance(status['gates']['navier_submission_build'],bool)
         self.assertIsInstance(status['gates']['root_axiom_check'],bool)
-        self.assertFalse(status['gates']['independent_comparator_nanoda'])
-        self.assertFalse(status['machine_replay_complete'])
+        self.assertIsInstance(status['gates']['independent_comparator_nanoda'],bool)
+        self.assertFalse(status['full_independent_validation'])
+        self.assertFalse(status['gates']['independent_mathematical_correspondence_review'])
         with self.assertRaises(ValueError):M.call('validation_status',{'complete':True})
     def test_budget_type_and_range_controls(self):
         for cap in [1,2,3,7,8,154,512]:

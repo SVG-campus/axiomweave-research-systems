@@ -1,5 +1,5 @@
 {
-  "timestamp_utc": "2026-10-02T23:55:53.319062+00:00",
+  "timestamp_utc": "2026-10-03T00:02:13.567260+00:00",
   "independent_reviewer_instantiated": false,
   "records": [
     {
@@ -10,7 +10,13 @@
       "claim_ceiling": "C0 scope",
       "falsifier": "Any backend silently routes into finance",
       "budget": "No trading; source-only bounded tools",
-      "stop_rule": "Stop at stated cap, failed negative control, unsupported prerequisite or unresolved independent-review gate."
+      "stop_rule": "Stop at stated cap, failed negative control, unsupported prerequisite or unresolved independent-review gate.",
+      "alternatives_considered": [
+        "Leave the architecture as a proposal without execution",
+        "Implement bounded task-scoped mechanics with explicit abstention"
+      ],
+      "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "sha256": "684a2aa3aab0b0b4ed24074e04eea2efd53d95a03f0a40cf85c5c27399c41e25"
     },
     {
       "id": 2,
@@ -20,7 +26,13 @@
       "claim_ceiling": "C1 runtime",
       "falsifier": "Named engine lacks an executable adapter but is called implemented",
       "budget": "21 tools; 95 finite contracts",
-      "stop_rule": "Stop at stated cap, failed negative control, unsupported prerequisite or unresolved independent-review gate."
+      "stop_rule": "Stop at stated cap, failed negative control, unsupported prerequisite or unresolved independent-review gate.",
+      "alternatives_considered": [
+        "Leave the architecture as a proposal without execution",
+        "Implement bounded task-scoped mechanics with explicit abstention"
+      ],
+      "previous_sha256": "684a2aa3aab0b0b4ed24074e04eea2efd53d95a03f0a40cf85c5c27399c41e25",
+      "sha256": "93ba57d83ddc0c04b4dccf4cd5d7e91ea368c9d13e3debc2a4c3be62d6f04d2f"
     },
     {
       "id": 3,
@@ -30,7 +42,13 @@
       "claim_ceiling": "C1 provenance",
       "falsifier": "Sensitive identifier or private conversation enters tracked public files",
       "budget": "Source and sanitized research receipts only",
-      "stop_rule": "Stop at stated cap, failed negative control, unsupported prerequisite or unresolved independent-review gate."
+      "stop_rule": "Stop at stated cap, failed negative control, unsupported prerequisite or unresolved independent-review gate.",
+      "alternatives_considered": [
+        "Leave the architecture as a proposal without execution",
+        "Implement bounded task-scoped mechanics with explicit abstention"
+      ],
+      "previous_sha256": "93ba57d83ddc0c04b4dccf4cd5d7e91ea368c9d13e3debc2a4c3be62d6f04d2f",
+      "sha256": "12ca3057f3c1658e1c7c99f2ffb6db68c606df4b1916a07f43aef98e8a3d2ea3"
     },
     {
       "id": 4,
@@ -40,7 +58,13 @@
       "claim_ceiling": "C0 route",
       "falsifier": "Snapshot agreement is represented as independent replication",
       "budget": "Independent review gate stays open",
-      "stop_rule": "Stop at stated cap, failed negative control, unsupported prerequisite or unresolved independent-review gate."
+      "stop_rule": "Stop at stated cap, failed negative control, unsupported prerequisite or unresolved independent-review gate.",
+      "alternatives_considered": [
+        "Leave the architecture as a proposal without execution",
+        "Implement bounded task-scoped mechanics with explicit abstention"
+      ],
+      "previous_sha256": "12ca3057f3c1658e1c7c99f2ffb6db68c606df4b1916a07f43aef98e8a3d2ea3",
+      "sha256": "fc61abc1af14a33bb94408ac1dd5ec1b37cc4e97f042653114c9d67c6f7fe34f"
     },
     {
       "id": 5,
@@ -50,7 +74,13 @@
       "claim_ceiling": "C1 runtime",
       "falsifier": "Tool discovery fails through SDK or unsupported backend silently executes",
       "budget": "Smallest task-scoped profile; default off",
-      "stop_rule": "Stop at stated cap, failed negative control, unsupported prerequisite or unresolved independent-review gate."
+      "stop_rule": "Stop at stated cap, failed negative control, unsupported prerequisite or unresolved independent-review gate.",
+      "alternatives_considered": [
+        "Leave the architecture as a proposal without execution",
+        "Implement bounded task-scoped mechanics with explicit abstention"
+      ],
+      "previous_sha256": "fc61abc1af14a33bb94408ac1dd5ec1b37cc4e97f042653114c9d67c6f7fe34f",
+      "sha256": "d85783640f497eec37d27b012957e3ffc148a25edf3c800545304e6d7e08781e"
     },
     {
       "id": 6,
@@ -60,7 +90,13 @@
       "claim_ceiling": "C1 bounded execution",
       "falsifier": "Negative control fails or a finite result becomes a universal theorem",
       "budget": "Three rounds; no all-method-discovery claim",
-      "stop_rule": "Stop at stated cap, failed negative control, unsupported prerequisite or unresolved independent-review gate."
+      "stop_rule": "Stop at stated cap, failed negative control, unsupported prerequisite or unresolved independent-review gate.",
+      "alternatives_considered": [
+        "Leave the architecture as a proposal without execution",
+        "Implement bounded task-scoped mechanics with explicit abstention"
+      ],
+      "previous_sha256": "d85783640f497eec37d27b012957e3ffc148a25edf3c800545304e6d7e08781e",
+      "sha256": "d65abf313b98836b444732e8876fbb8894ce033fe519386226e21499f17cc5ee"
     },
     {
       "id": 7,
@@ -70,7 +106,13 @@
       "claim_ceiling": "C1 certified-library execution",
       "falsifier": "Ambiguous boundary returns a spurious exact count",
       "budget": "Height<=200; precision64..512; no kernel-proof claim",
-      "stop_rule": "Stop at stated cap, failed negative control, unsupported prerequisite or unresolved independent-review gate."
+      "stop_rule": "Stop at stated cap, failed negative control, unsupported prerequisite or unresolved independent-review gate.",
+      "alternatives_considered": [
+        "Leave the architecture as a proposal without execution",
+        "Implement bounded task-scoped mechanics with explicit abstention"
+      ],
+      "previous_sha256": "d65abf313b98836b444732e8876fbb8894ce033fe519386226e21499f17cc5ee",
+      "sha256": "47bd706d90bd9d67e5a9c8d4c2927e3354c57f87255e513f29a271d76a8d251f"
     },
     {
       "id": 8,
@@ -80,7 +122,13 @@
       "claim_ceiling": "C1 backend execution",
       "falsifier": "Off-curve double, count disagreement or rank bounds disagree",
       "budget": "30-second fixed GP program; no supplied code",
-      "stop_rule": "Stop at stated cap, failed negative control, unsupported prerequisite or unresolved independent-review gate."
+      "stop_rule": "Stop at stated cap, failed negative control, unsupported prerequisite or unresolved independent-review gate.",
+      "alternatives_considered": [
+        "Leave the architecture as a proposal without execution",
+        "Implement bounded task-scoped mechanics with explicit abstention"
+      ],
+      "previous_sha256": "47bd706d90bd9d67e5a9c8d4c2927e3354c57f87255e513f29a271d76a8d251f",
+      "sha256": "8e93c471b2f8959fe0a9348c4550b868328fa3f6f20044e0083d986f7af6557e"
     },
     {
       "id": 9,
@@ -90,7 +138,13 @@
       "claim_ceiling": "C1 finite lattice",
       "falsifier": "An accepted child has a rejected parent",
       "budget": "At most8 atoms; outside-lattice proof remains open",
-      "stop_rule": "Stop at stated cap, failed negative control, unsupported prerequisite or unresolved independent-review gate."
+      "stop_rule": "Stop at stated cap, failed negative control, unsupported prerequisite or unresolved independent-review gate.",
+      "alternatives_considered": [
+        "Leave the architecture as a proposal without execution",
+        "Implement bounded task-scoped mechanics with explicit abstention"
+      ],
+      "previous_sha256": "8e93c471b2f8959fe0a9348c4550b868328fa3f6f20044e0083d986f7af6557e",
+      "sha256": "336d20c00664900ed89483b862437243de87e53867be85986790d3de3a03d646"
     },
     {
       "id": 10,
@@ -100,7 +154,13 @@
       "claim_ceiling": "C1 replay mechanics",
       "falsifier": "sorryAx, modified trusted statement, timeout or absent terminal checker exit",
       "budget": "Disposable cloud machine <=90min; max2 repairs; checkpoint before deadline",
-      "stop_rule": "Stop at stated cap, failed negative control, unsupported prerequisite or unresolved independent-review gate."
+      "stop_rule": "Stop at stated cap, failed negative control, unsupported prerequisite or unresolved independent-review gate.",
+      "alternatives_considered": [
+        "Leave the architecture as a proposal without execution",
+        "Implement bounded task-scoped mechanics with explicit abstention"
+      ],
+      "previous_sha256": "336d20c00664900ed89483b862437243de87e53867be85986790d3de3a03d646",
+      "sha256": "54ca026cdc78598040cb60e0355d2aa922782e8e6e22c87c6ff4153ed137144c"
     },
     {
       "id": 11,
@@ -110,7 +170,13 @@
       "claim_ceiling": "C1 operation receipts",
       "falsifier": "New task resource remains or unrelated resource is removed",
       "budget": "Preserve existing VMs and projects; no cleanup-policy bypass",
-      "stop_rule": "Stop at stated cap, failed negative control, unsupported prerequisite or unresolved independent-review gate."
+      "stop_rule": "Stop at stated cap, failed negative control, unsupported prerequisite or unresolved independent-review gate.",
+      "alternatives_considered": [
+        "Leave the architecture as a proposal without execution",
+        "Implement bounded task-scoped mechanics with explicit abstention"
+      ],
+      "previous_sha256": "54ca026cdc78598040cb60e0355d2aa922782e8e6e22c87c6ff4153ed137144c",
+      "sha256": "5059c65ab9af62ed6e6e85d9ea31e9d9f386b202fe0f0605571be5e80da5aeab"
     },
     {
       "id": 12,
@@ -120,7 +186,14 @@
       "claim_ceiling": "C1 finite coverage",
       "falsifier": "Claim exhaustive coverage beyond the frozen ontology",
       "budget": "Three non-improving sweeps; explicit unexplored space",
-      "stop_rule": "Stop at stated cap, failed negative control, unsupported prerequisite or unresolved independent-review gate."
+      "stop_rule": "Stop at stated cap, failed negative control, unsupported prerequisite or unresolved independent-review gate.",
+      "alternatives_considered": [
+        "Leave the architecture as a proposal without execution",
+        "Implement bounded task-scoped mechanics with explicit abstention"
+      ],
+      "previous_sha256": "5059c65ab9af62ed6e6e85d9ea31e9d9f386b202fe0f0605571be5e80da5aeab",
+      "sha256": "bf569d796e41b78c84098dcf6711af5e5673e32974d0d3f40772b006e434cc20"
     }
-  ]
+  ],
+  "hash_chain_basis": "SHA256 of canonical sorted JSON record excluding sha256, includes previous_sha256; Git history supplies additional change tracking"
 }
