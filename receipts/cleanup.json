@@ -1,0 +1,13 @@
+{
+  "task_80_gb_boot_disk_deleted": true,
+  "scope": "Only the task-created disposable compute VM and boot disk; no unrelated resources removed",
+  "local_recursive_cleanup": "pending final scoped attempt; earlier task checkouts blocked by automatic approval review",
+  "claim_ceiling": "C1 operation receipts",
+  "timestamp_utc": "2026-10-03T00:37:43.2140201Z",
+  "remaining_original_vm_count": 2,
+  "remaining_original_disk_count": 2,
+  "existing_vm_identities_preserved": true,
+  "task_vm_deleted": true,
+  "public_results_verified_through_github_mcp": true,
+  "existing_disk_identities_preserved": true
+}

@@ -16,6 +16,7 @@
     "receipts/axioms-exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
     "receipts/cache-exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
     "receipts/checker-stage.txt": "ea47ae217585ab40c87c01dbf7d3acaf74ac3e7b3de160f24ad0fb4d638fdde4",
+    "receipts/cleanup.json": "774b7fcc966e50db781e6c242b42d6098eab94c1818fd5bb6da2fc3938b8dae8",
     "receipts/cloud-build.log": "78dc58a4c6b296d1b243893882e35caaf25b67976c21fa475c4bc1b4d8cbd1bc",
     "receipts/comparator-exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
     "receipts/comparator-tools-build.log": "4cc0fc488b51c3bdece6813c203e4c7984d79ec2fed9d2ea58b4fd07a7db8755",
