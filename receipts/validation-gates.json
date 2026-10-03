@@ -1,0 +1,38 @@
+{
+  "timestamp_utc": "2026-10-03T00:09:47.777502+00:00",
+  "gates": {
+    "exact_toolchain_installed": true,
+    "exact_source_pin": true,
+    "pinned_cache_fetched": true,
+    "navier_submission_build": true,
+    "root_axiom_check": true,
+    "independent_comparator_nanoda": false,
+    "trusted_reference_integrity": false,
+    "formal_scaling_controls": false,
+    "independent_mathematical_correspondence_review": false
+  },
+  "axioms": {
+    "NavierStokes.Comparator.navier_stokes_breakdown_R3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "NavierStokes.Comparator.navier_stokes_breakdown_periodic": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "root_axiom_evidence": "navier-axioms.log",
+  "standalone_axiom_print_exit_code": 0,
+  "machine_replay_complete": false,
+  "full_independent_validation": false,
+  "claim_ceiling": "C1 execution mechanics and C2 source correspondence; inspect replay gates; no independent adjudication",
+  "open_gates": [
+    "independent_comparator_nanoda",
+    "trusted_reference_integrity",
+    "formal_scaling_controls",
+    "independent_mathematical_correspondence_review"
+  ],
+  "gate_negative_controls_passed": 4
+}
