@@ -17,6 +17,8 @@ decisions=[
 out={'timestamp_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'independent_reviewer_instantiated':False,'records':[{'id':i+1,'kind':k,'statement':s,'evidence':e,'claim_ceiling':c,'falsifier':f,'budget':b,'stop_rule':'Stop at stated cap, failed negative control, unsupported prerequisite or unresolved independent-review gate.'} for i,(k,s,e,c,f,b) in enumerate(decisions)]}
 previous='0'*64
 for record in out['records']:
+    record['question']='How should the research handle '+record['kind']+'?'
+    record['assumptions']=['Inputs and source universe are bounded and frozen','External backends are trusted only within their documented guarantees','Public source publication is authorized; private history and cloud identity stay excluded']
     record['alternatives_considered']=['Leave the architecture as a proposal without execution','Implement bounded task-scoped mechanics with explicit abstention']
     record['previous_sha256']=previous
     record['sha256']=hashlib.sha256(json.dumps(record,sort_keys=True,separators=(',',':')).encode()).hexdigest();previous=record['sha256']

@@ -1,5 +1,5 @@
 {
-  "timestamp_utc": "2026-10-03T00:06:02.874528+00:00",
+  "timestamp_utc": "2026-10-03T00:15:53.402727+00:00",
   "independent_reviewer_instantiated": false,
   "records": [
     {
@@ -11,12 +11,18 @@
       "falsifier": "Any backend silently routes into finance",
       "budget": "No trading; source-only bounded tools",
       "stop_rule": "Stop at stated cap, failed negative control, unsupported prerequisite or unresolved independent-review gate.",
+      "question": "How should the research handle Scope?",
+      "assumptions": [
+        "Inputs and source universe are bounded and frozen",
+        "External backends are trusted only within their documented guarantees",
+        "Public source publication is authorized; private history and cloud identity stay excluded"
+      ],
       "alternatives_considered": [
         "Leave the architecture as a proposal without execution",
         "Implement bounded task-scoped mechanics with explicit abstention"
       ],
       "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
-      "sha256": "684a2aa3aab0b0b4ed24074e04eea2efd53d95a03f0a40cf85c5c27399c41e25"
+      "sha256": "4dbe1a2bfd644e32036b67d602abfe6f7b8c0d2f90de4a676808b07a3eceefc6"
     },
     {
       "id": 2,
@@ -27,12 +33,18 @@
       "falsifier": "Named engine lacks an executable adapter but is called implemented",
       "budget": "21 tools; 95 finite contracts",
       "stop_rule": "Stop at stated cap, failed negative control, unsupported prerequisite or unresolved independent-review gate.",
+      "question": "How should the research handle Architecture?",
+      "assumptions": [
+        "Inputs and source universe are bounded and frozen",
+        "External backends are trusted only within their documented guarantees",
+        "Public source publication is authorized; private history and cloud identity stay excluded"
+      ],
       "alternatives_considered": [
         "Leave the architecture as a proposal without execution",
         "Implement bounded task-scoped mechanics with explicit abstention"
       ],
-      "previous_sha256": "684a2aa3aab0b0b4ed24074e04eea2efd53d95a03f0a40cf85c5c27399c41e25",
-      "sha256": "93ba57d83ddc0c04b4dccf4cd5d7e91ea368c9d13e3debc2a4c3be62d6f04d2f"
+      "previous_sha256": "4dbe1a2bfd644e32036b67d602abfe6f7b8c0d2f90de4a676808b07a3eceefc6",
+      "sha256": "c9bc83267f86c40b3f6cf50a3a4e50d660bd9afb1d4e5eff489d6d2f682779f4"
     },
     {
       "id": 3,
@@ -43,12 +55,18 @@
       "falsifier": "Sensitive identifier or private conversation enters tracked public files",
       "budget": "Source and sanitized research receipts only",
       "stop_rule": "Stop at stated cap, failed negative control, unsupported prerequisite or unresolved independent-review gate.",
+      "question": "How should the research handle Public release?",
+      "assumptions": [
+        "Inputs and source universe are bounded and frozen",
+        "External backends are trusted only within their documented guarantees",
+        "Public source publication is authorized; private history and cloud identity stay excluded"
+      ],
       "alternatives_considered": [
         "Leave the architecture as a proposal without execution",
         "Implement bounded task-scoped mechanics with explicit abstention"
       ],
-      "previous_sha256": "93ba57d83ddc0c04b4dccf4cd5d7e91ea368c9d13e3debc2a4c3be62d6f04d2f",
-      "sha256": "12ca3057f3c1658e1c7c99f2ffb6db68c606df4b1916a07f43aef98e8a3d2ea3"
+      "previous_sha256": "c9bc83267f86c40b3f6cf50a3a4e50d660bd9afb1d4e5eff489d6d2f682779f4",
+      "sha256": "2420d73070948c153b0277867e98221a1d3b6a5fc95d99ac3dfb4aba9ad3ab8b"
     },
     {
       "id": 4,
@@ -59,12 +77,18 @@
       "falsifier": "Snapshot agreement is represented as independent replication",
       "budget": "Independent review gate stays open",
       "stop_rule": "Stop at stated cap, failed negative control, unsupported prerequisite or unresolved independent-review gate.",
+      "question": "How should the research handle Route?",
+      "assumptions": [
+        "Inputs and source universe are bounded and frozen",
+        "External backends are trusted only within their documented guarantees",
+        "Public source publication is authorized; private history and cloud identity stay excluded"
+      ],
       "alternatives_considered": [
         "Leave the architecture as a proposal without execution",
         "Implement bounded task-scoped mechanics with explicit abstention"
       ],
-      "previous_sha256": "12ca3057f3c1658e1c7c99f2ffb6db68c606df4b1916a07f43aef98e8a3d2ea3",
-      "sha256": "fc61abc1af14a33bb94408ac1dd5ec1b37cc4e97f042653114c9d67c6f7fe34f"
+      "previous_sha256": "2420d73070948c153b0277867e98221a1d3b6a5fc95d99ac3dfb4aba9ad3ab8b",
+      "sha256": "69131e7a04a7f832ec20e8b2fbc934694c798b7625e82a87cce5e04aee9059e8"
     },
     {
       "id": 5,
@@ -75,12 +99,18 @@
       "falsifier": "Tool discovery fails through SDK or unsupported backend silently executes",
       "budget": "Smallest task-scoped profile; default off",
       "stop_rule": "Stop at stated cap, failed negative control, unsupported prerequisite or unresolved independent-review gate.",
+      "question": "How should the research handle MCP verification?",
+      "assumptions": [
+        "Inputs and source universe are bounded and frozen",
+        "External backends are trusted only within their documented guarantees",
+        "Public source publication is authorized; private history and cloud identity stay excluded"
+      ],
       "alternatives_considered": [
         "Leave the architecture as a proposal without execution",
         "Implement bounded task-scoped mechanics with explicit abstention"
       ],
-      "previous_sha256": "fc61abc1af14a33bb94408ac1dd5ec1b37cc4e97f042653114c9d67c6f7fe34f",
-      "sha256": "d85783640f497eec37d27b012957e3ffc148a25edf3c800545304e6d7e08781e"
+      "previous_sha256": "69131e7a04a7f832ec20e8b2fbc934694c798b7625e82a87cce5e04aee9059e8",
+      "sha256": "55f3655aa273e906fb95fa78a9a3180e17b38c33d89c064830430a3d2591253d"
     },
     {
       "id": 6,
@@ -91,12 +121,18 @@
       "falsifier": "Negative control fails or a finite result becomes a universal theorem",
       "budget": "Three rounds; no all-method-discovery claim",
       "stop_rule": "Stop at stated cap, failed negative control, unsupported prerequisite or unresolved independent-review gate.",
+      "question": "How should the research handle Research loop?",
+      "assumptions": [
+        "Inputs and source universe are bounded and frozen",
+        "External backends are trusted only within their documented guarantees",
+        "Public source publication is authorized; private history and cloud identity stay excluded"
+      ],
       "alternatives_considered": [
         "Leave the architecture as a proposal without execution",
         "Implement bounded task-scoped mechanics with explicit abstention"
       ],
-      "previous_sha256": "d85783640f497eec37d27b012957e3ffc148a25edf3c800545304e6d7e08781e",
-      "sha256": "d65abf313b98836b444732e8876fbb8894ce033fe519386226e21499f17cc5ee"
+      "previous_sha256": "55f3655aa273e906fb95fa78a9a3180e17b38c33d89c064830430a3d2591253d",
+      "sha256": "89e61f67b80ff5beae2010d716df68d92c189dd771efaa9e3a45ef7b2583c16e"
     },
     {
       "id": 7,
@@ -107,12 +143,18 @@
       "falsifier": "Ambiguous boundary returns a spurious exact count",
       "budget": "Height<=200; precision64..512; no kernel-proof claim",
       "stop_rule": "Stop at stated cap, failed negative control, unsupported prerequisite or unresolved independent-review gate.",
+      "question": "How should the research handle Numerical trust?",
+      "assumptions": [
+        "Inputs and source universe are bounded and frozen",
+        "External backends are trusted only within their documented guarantees",
+        "Public source publication is authorized; private history and cloud identity stay excluded"
+      ],
       "alternatives_considered": [
         "Leave the architecture as a proposal without execution",
         "Implement bounded task-scoped mechanics with explicit abstention"
       ],
-      "previous_sha256": "d65abf313b98836b444732e8876fbb8894ce033fe519386226e21499f17cc5ee",
-      "sha256": "47bd706d90bd9d67e5a9c8d4c2927e3354c57f87255e513f29a271d76a8d251f"
+      "previous_sha256": "89e61f67b80ff5beae2010d716df68d92c189dd771efaa9e3a45ef7b2583c16e",
+      "sha256": "56d36f18313a385d64f30e614b861b88d4fff7a42d44c91f6d820956410160a6"
     },
     {
       "id": 8,
@@ -123,12 +165,18 @@
       "falsifier": "Off-curve double, count disagreement or rank bounds disagree",
       "budget": "30-second fixed GP program; no supplied code",
       "stop_rule": "Stop at stated cap, failed negative control, unsupported prerequisite or unresolved independent-review gate.",
+      "question": "How should the research handle Arithmetic trust?",
+      "assumptions": [
+        "Inputs and source universe are bounded and frozen",
+        "External backends are trusted only within their documented guarantees",
+        "Public source publication is authorized; private history and cloud identity stay excluded"
+      ],
       "alternatives_considered": [
         "Leave the architecture as a proposal without execution",
         "Implement bounded task-scoped mechanics with explicit abstention"
       ],
-      "previous_sha256": "47bd706d90bd9d67e5a9c8d4c2927e3354c57f87255e513f29a271d76a8d251f",
-      "sha256": "8e93c471b2f8959fe0a9348c4550b868328fa3f6f20044e0083d986f7af6557e"
+      "previous_sha256": "56d36f18313a385d64f30e614b861b88d4fff7a42d44c91f6d820956410160a6",
+      "sha256": "0512b27f41074808f43b16281fc0433f22378ef235f6c6139ee00cdbe9f4ffe1"
     },
     {
       "id": 9,
@@ -139,12 +187,18 @@
       "falsifier": "An accepted child has a rejected parent",
       "budget": "At most8 atoms; outside-lattice proof remains open",
       "stop_rule": "Stop at stated cap, failed negative control, unsupported prerequisite or unresolved independent-review gate.",
+      "question": "How should the research handle Pruning?",
+      "assumptions": [
+        "Inputs and source universe are bounded and frozen",
+        "External backends are trusted only within their documented guarantees",
+        "Public source publication is authorized; private history and cloud identity stay excluded"
+      ],
       "alternatives_considered": [
         "Leave the architecture as a proposal without execution",
         "Implement bounded task-scoped mechanics with explicit abstention"
       ],
-      "previous_sha256": "8e93c471b2f8959fe0a9348c4550b868328fa3f6f20044e0083d986f7af6557e",
-      "sha256": "336d20c00664900ed89483b862437243de87e53867be85986790d3de3a03d646"
+      "previous_sha256": "0512b27f41074808f43b16281fc0433f22378ef235f6c6139ee00cdbe9f4ffe1",
+      "sha256": "18843d2597d2ac0bf8170e7614363094e08bfb9fb11d9547b77c75c3a951a1c4"
     },
     {
       "id": 10,
@@ -155,12 +209,18 @@
       "falsifier": "sorryAx, modified trusted statement, timeout or absent terminal checker exit",
       "budget": "Disposable cloud machine <=90min; max2 repairs; checkpoint before deadline",
       "stop_rule": "Stop at stated cap, failed negative control, unsupported prerequisite or unresolved independent-review gate.",
+      "question": "How should the research handle Formal replay?",
+      "assumptions": [
+        "Inputs and source universe are bounded and frozen",
+        "External backends are trusted only within their documented guarantees",
+        "Public source publication is authorized; private history and cloud identity stay excluded"
+      ],
       "alternatives_considered": [
         "Leave the architecture as a proposal without execution",
         "Implement bounded task-scoped mechanics with explicit abstention"
       ],
-      "previous_sha256": "336d20c00664900ed89483b862437243de87e53867be85986790d3de3a03d646",
-      "sha256": "54ca026cdc78598040cb60e0355d2aa922782e8e6e22c87c6ff4153ed137144c"
+      "previous_sha256": "18843d2597d2ac0bf8170e7614363094e08bfb9fb11d9547b77c75c3a951a1c4",
+      "sha256": "1f135b37730e4ece2f7e688be05bb41b5e12a845b61a2a4a82faa348b93d751f"
     },
     {
       "id": 11,
@@ -171,12 +231,18 @@
       "falsifier": "New task resource remains or unrelated resource is removed",
       "budget": "Preserve existing VMs and projects; no cleanup-policy bypass",
       "stop_rule": "Stop at stated cap, failed negative control, unsupported prerequisite or unresolved independent-review gate.",
+      "question": "How should the research handle Cleanup?",
+      "assumptions": [
+        "Inputs and source universe are bounded and frozen",
+        "External backends are trusted only within their documented guarantees",
+        "Public source publication is authorized; private history and cloud identity stay excluded"
+      ],
       "alternatives_considered": [
         "Leave the architecture as a proposal without execution",
         "Implement bounded task-scoped mechanics with explicit abstention"
       ],
-      "previous_sha256": "54ca026cdc78598040cb60e0355d2aa922782e8e6e22c87c6ff4153ed137144c",
-      "sha256": "5059c65ab9af62ed6e6e85d9ea31e9d9f386b202fe0f0605571be5e80da5aeab"
+      "previous_sha256": "1f135b37730e4ece2f7e688be05bb41b5e12a845b61a2a4a82faa348b93d751f",
+      "sha256": "324e5591347cecc397299357aaae075b79415959f7ac63f937367e55f9c5ebb7"
     },
     {
       "id": 12,
@@ -187,12 +253,18 @@
       "falsifier": "Claim exhaustive coverage beyond the frozen ontology",
       "budget": "Three non-improving sweeps; explicit unexplored space",
       "stop_rule": "Stop at stated cap, failed negative control, unsupported prerequisite or unresolved independent-review gate.",
+      "question": "How should the research handle Stop rule?",
+      "assumptions": [
+        "Inputs and source universe are bounded and frozen",
+        "External backends are trusted only within their documented guarantees",
+        "Public source publication is authorized; private history and cloud identity stay excluded"
+      ],
       "alternatives_considered": [
         "Leave the architecture as a proposal without execution",
         "Implement bounded task-scoped mechanics with explicit abstention"
       ],
-      "previous_sha256": "5059c65ab9af62ed6e6e85d9ea31e9d9f386b202fe0f0605571be5e80da5aeab",
-      "sha256": "bf569d796e41b78c84098dcf6711af5e5673e32974d0d3f40772b006e434cc20"
+      "previous_sha256": "324e5591347cecc397299357aaae075b79415959f7ac63f937367e55f9c5ebb7",
+      "sha256": "b7fd6f35a2ca87b161bdeca5c399224012c23e03ec55b582275d4dda00f65678"
     }
   ],
   "hash_chain_basis": "SHA256 of canonical sorted JSON record excluding sha256, includes previous_sha256; Git history supplies additional change tracking"
