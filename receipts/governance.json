@@ -1,5 +1,5 @@
 {
-  "timestamp_utc": "2026-10-03T00:15:53.402727+00:00",
+  "timestamp_utc": "2026-10-03T00:32:44.644386+00:00",
   "independent_reviewer_instantiated": false,
   "records": [
     {
@@ -265,6 +265,28 @@
       ],
       "previous_sha256": "324e5591347cecc397299357aaae075b79415959f7ac63f937367e55f9c5ebb7",
       "sha256": "b7fd6f35a2ca87b161bdeca5c399224012c23e03ec55b582275d4dda00f65678"
+    },
+    {
+      "id": 13,
+      "kind": "Auxiliary control repair",
+      "statement": "After full-Mathlib import timeout, narrow only control imports; preserve theorem bodies and the first failed receipt.",
+      "evidence": "receipts/control-import-repair.json",
+      "claim_ceiling": "C1 scoped mechanics",
+      "falsifier": "The theorem body, upstream solution or trusted reference changes",
+      "budget": "One 120-second positive and negative replay; one import-only repair",
+      "stop_rule": "Stop at stated cap, failed negative control, unsupported prerequisite or unresolved independent-review gate.",
+      "question": "How should the research handle Auxiliary control repair?",
+      "assumptions": [
+        "Inputs and source universe are bounded and frozen",
+        "External backends are trusted only within their documented guarantees",
+        "Public source publication is authorized; private history and cloud identity stay excluded"
+      ],
+      "alternatives_considered": [
+        "Leave the architecture as a proposal without execution",
+        "Implement bounded task-scoped mechanics with explicit abstention"
+      ],
+      "previous_sha256": "b7fd6f35a2ca87b161bdeca5c399224012c23e03ec55b582275d4dda00f65678",
+      "sha256": "2fff8cc31740c9cd641266d2192b84dd2816d4522c6b734584c4c84c9f418da6"
     }
   ],
   "hash_chain_basis": "SHA256 of canonical sorted JSON record excluding sha256, includes previous_sha256; Git history supplies additional change tracking"

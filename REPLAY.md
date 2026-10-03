@@ -32,4 +32,8 @@ Trusted SHA256 values:
 
 Verify them before and after checking. `proof_gate.py` requires terminal checker exit zero and all prerequisite receipts; missing data or timeout remains open. A passing independent kernel replay still leaves independent mathematical correspondence review open.
 
+Follow-up result: **success**, terminal exit **0**. Both nanoda and the default Lean kernel accepted the solution; Comparator reported `Your solution is okay!`. All three trusted hashes passed their after-check. Service runtime **21min 26.974s**. No verifier substitution, changed statement, expanded axiom whitelist, or retry was needed in this follow-up attempt. See [receipts/comparator.log](receipts/comparator.log).
+
+Separate auxiliary controls: the initial positive scaling check timed out at 120 seconds with a full Mathlib import. An import-only repair using the required Real/tactic modules preserved both theorem bodies; the positive replay exited **0** and the deliberately false replay exited **1** with `unsolved goals` / `False`. The original timeout is retained. This does not modify the submitted PDE theorem. See [repair receipt](receipts/control-import-repair.json).
+
 Prior runs timed out in the actual checker. They are negative execution receipts, not disprovals of the theorem. Runtime changes may improve completion, but must not weaken reference statements or validator rules.

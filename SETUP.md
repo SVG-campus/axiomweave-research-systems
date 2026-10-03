@@ -29,4 +29,15 @@ Portable command contract:
 
 This is an interchange description, not an asserted native schema for every client. Official SDK verification establishes protocol operation, not live IDE discovery or model utility.
 
+Earlier Antigravity proposal names map to this server as follows:
+
+| Earlier proposal | Current tool | Difference |
+|---|---|---|
+| `as3r_symbolic_search` | `symbolic_search` | Restricted exact grammar and enforced search caps |
+| `audit_complexity_barriers` | `audit_complexity_barriers` | Conditional obligations; no automatic admissibility certificate |
+| `check_spectral_gap_continuum` | `check_spectral_limit` | Optional Arb enclosures for the specified toy model |
+| `query_epistemic_ledger` | `validation_status` plus published governance receipts | Reads evidence gates; does not certify mathematical truth |
+
+Old proposal names are not aliases registered by this server. Use the current tools or request them in natural language. The separately installed `$axiomweave-agentic-ide` skill governs workflow auditing; it is distinct from this repository's optional companion skill.
+
 Do not leave a configuration pointing at an ephemeral directory after cleanup. Public GitHub storage preserves source, not a continuously running MCP service. Hosting a persistent service is a separate deployment with authentication, isolation and operating-cost requirements.

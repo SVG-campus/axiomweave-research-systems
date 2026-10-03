@@ -1,0 +1,23 @@
+{
+  "scope": "Auxiliary elementary controls only",
+  "first_positive_exit": 124,
+  "repaired_positive_exit": 0,
+  "repaired_false_control_exit": 1,
+  "original_receipt": "scaling-first-exit-code.txt",
+  "repair": "Replace full Mathlib import with Real.Basic and required tactics",
+  "upstream_submission_modified": false,
+  "trusted_reference_modified": false,
+  "controls": [
+    {
+      "file": "ScalingControls.lean",
+      "theorem_body_unchanged": true,
+      "body_sha256": "8bbcdf49c1230d5722619a9869235b0f38f3aba438d5a4b86165a5e9a40832e0"
+    },
+    {
+      "file": "FalseScalingControl.lean",
+      "theorem_body_unchanged": true,
+      "body_sha256": "7fb14388587e5334563378e90d1e6607981c7217ee93aa062a4f37c86658544f"
+    }
+  ],
+  "budget_seconds_per_control": 120
+}

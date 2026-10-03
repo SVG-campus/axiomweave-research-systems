@@ -1,4 +1,7 @@
-import Mathlib
+import Mathlib.Data.Real.Basic
+import Mathlib.Tactic.Linarith
+import Mathlib.Tactic.Ring
+import Mathlib.Tactic.NormNum
 
 /- Elementary consistency check of the exponents reported in the paper.
    This does not construct a fluid or prove the claimed blowup. -/

@@ -49,4 +49,6 @@ On Debian, `pari-gp` is an optional system package. Do not install or download t
 
 All 95 entries are MCP-addressable with `execute_method`. Entries without adapters return their contract and abstain. An adapter implements only the documented narrow domain, not the entire mathematical method. The catalog's final sweep checks the frozen seed universe, not all possible discoveries. Large pairwise contract audits are not 9,025 executed mathematical solvers.
 
+Current catalog status: **14 bounded built-in adapters, 3 optional-backend adapters, 78 catalog-only entries**. See the machine catalog for each exact scope.
+
 Public provenance excludes private conversations, account identifiers, credentials and cloud metadata. External source projects keep their own licenses; they are linked, not relicensed here.

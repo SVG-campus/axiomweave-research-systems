@@ -1,14 +1,14 @@
 {
-  "timestamp_utc": "2026-10-03T00:09:47.777502+00:00",
+  "timestamp_utc": "2026-10-03T00:32:44.373245+00:00",
   "gates": {
     "exact_toolchain_installed": true,
     "exact_source_pin": true,
     "pinned_cache_fetched": true,
     "navier_submission_build": true,
     "root_axiom_check": true,
-    "independent_comparator_nanoda": false,
-    "trusted_reference_integrity": false,
-    "formal_scaling_controls": false,
+    "independent_comparator_nanoda": true,
+    "trusted_reference_integrity": true,
+    "formal_scaling_controls": true,
     "independent_mathematical_correspondence_review": false
   },
   "axioms": {
@@ -25,13 +25,10 @@
   },
   "root_axiom_evidence": "navier-axioms.log",
   "standalone_axiom_print_exit_code": 0,
-  "machine_replay_complete": false,
+  "machine_replay_complete": true,
   "full_independent_validation": false,
   "claim_ceiling": "C1 execution mechanics and C2 source correspondence; inspect replay gates; no independent adjudication",
   "open_gates": [
-    "independent_comparator_nanoda",
-    "trusted_reference_integrity",
-    "formal_scaling_controls",
     "independent_mathematical_correspondence_review"
   ],
   "gate_negative_controls_passed": 4

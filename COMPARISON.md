@@ -9,7 +9,7 @@ This comparison uses the supplied architecture and the latest available Antigrav
 | Complexity | Proposed barrier engine | Conditional checklist with usefulness and hardness assumptions; never certifies admissibility from flags | Method properties need independent mathematical demonstration |
 | Numerical certificates | Proposed interval and spectral engines | Actual Arb zero/count balls and gap enclosures | Trusts external library; bounded RH and toy spectral model |
 | Elliptic examples | Located rational point and proposed BSD avenue | Exact doubling, two count methods, infinite-order inference and PARI rank bounds; corrected conductor | Generator saturation and general BSD remain open |
-| Formal proof | Lean/comparator emphasis | Pinned root replay, axiom controls, attempted independent checker and fail-closed gate receipts | Theorem-to-statement correspondence requires expert review |
+| Formal proof | Lean/comparator emphasis | Fresh pinned root replay, allowed-axiom closure and successful independent nanoda/Comparator plus Lean kernel check | Theorem-to-statement correspondence requires expert review |
 | Discovery loops | Proposed repeated expansion | Executed capped portfolio, final controls and measurable stop reason | Frozen seed saturation is not exhaustive method discovery |
 | MCP | Four-tool prototype | 21-tool server, 95-addressable contracts, official SDK verification | Live IDE discovery and held-out usefulness not verified |
 

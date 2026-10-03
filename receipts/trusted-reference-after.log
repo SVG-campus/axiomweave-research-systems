@@ -1,0 +1,3 @@
+ComparatorChallenges/NavierStokes.lean: OK
+NavierStokes/ComparatorDefinitions.lean: OK
+lake-manifest.json: OK
