@@ -23,6 +23,6 @@ test_seeded_rational_identity_controls (test_research_systems.Tests.test_seeded_
 test_validation_cannot_promote_correspondence (test_research_systems.Tests.test_validation_cannot_promote_correspondence) ... ok
 
 ----------------------------------------------------------------------
-Ran 23 tests in 2.169s
+Ran 23 tests in 2.399s
 
 OK
