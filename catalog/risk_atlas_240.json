@@ -1,0 +1,3060 @@
+{
+  "version": "risk-atlas-v1-20261005",
+  "declared_denominator": 240,
+  "families_denominator": 60,
+  "legacy_source_sha256": "968a63f4cdec93ef2cd6ba97f98185d46196dd50aa4fb5a45db18a110e41d413",
+  "coverage_scope": "Declared taxonomy only; 216 legacy labels + 12 original Section 7 labels + 12 validation/feasibility scenarios.",
+  "universal_coverage": false,
+  "scenarios": [
+    {
+      "id": "regime_01_twap_memory_lag",
+      "name": "Near-Expiry TWAP Inertia / Memory Lag (tau <= 1.5m)",
+      "family": "Family I: Temporal & Index Settlement Regimes (Oracle & TWAP)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "rem"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_02_multivenue_basis_divergence",
+      "name": "Multi-Venue Basis Divergence / 6-Exchange Oracle Lag",
+      "family": "Family I: Temporal & Index Settlement Regimes (Oracle & TWAP)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_03_discrete_pip_tie_hazard",
+      "name": "Asymmetric Discrete Pip Rounding & Exact Tie Hazard",
+      "family": "Family I: Temporal & Index Settlement Regimes (Oracle & TWAP)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "exact_tie",
+        "lead_bps"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_04_subtick_queue_jitter",
+      "name": "Sub-Tick Order Book Queue Jitter (<50ms Racing)",
+      "family": "Family I: Temporal & Index Settlement Regimes (Oracle & TWAP)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "latency_ms"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_05_macro_volatility_shock",
+      "name": "Macro Volatility Flash Shock / Jump Diffusion (CPI/FOMC)",
+      "family": "Family II: Market Dynamics & Volatility Regimes (Microstructure & Pricing)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "is_shock",
+        "time_to_macro_release_seconds"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_06_sustained_trend_breakout",
+      "name": "Sustained Trend Breakout / Momentum Overrun",
+      "family": "Family II: Market Dynamics & Volatility Regimes (Microstructure & Pricing)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "macro_trend"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_07_volatility_compression",
+      "name": "Volatility Compression / Pinhole Spread Noise",
+      "family": "Family II: Market Dynamics & Volatility Regimes (Microstructure & Pricing)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "lead_bps"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_08_mean_reversion_trap",
+      "name": "Mean-Reversion Trap / False Rebound Whipsaw",
+      "family": "Family II: Market Dynamics & Volatility Regimes (Microstructure & Pricing)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "mean_reversion_halflife_seconds"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_09_cross_asset_beta_contagion",
+      "name": "Cross-Asset Beta Contagion & Lead-Lag Spillover",
+      "family": "Family III: Cross-Asset & Portfolio Regimes (Contagion & Multi-Sniper)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "is_shock"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_10_multisniper_concurrency_shock",
+      "name": "Multi-Sniper Concurrency Shock / Correlation Collapse",
+      "family": "Family III: Cross-Asset & Portfolio Regimes (Contagion & Multi-Sniper)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "concurrency_count"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_11_idiosyncratic_whale_decoupling",
+      "name": "Idiosyncratic Decoupling / Whale Manipulation",
+      "family": "Family III: Cross-Asset & Portfolio Regimes (Contagion & Multi-Sniper)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_12_liquidity_drought_spread",
+      "name": "Liquidity Drought / Order Book Thinning & Spread Widening",
+      "family": "Family III: Cross-Asset & Portfolio Regimes (Contagion & Multi-Sniper)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "l2_resting_contracts",
+        "spread_cents"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_13_consecutive_loss_streak",
+      "name": "Consecutive Loss Streak / Adverse Regime Switch",
+      "family": "Family IV: Systemic & Operational Regimes (Gateway & Risk)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "consecutive_losses"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_14_gateway_latency_spike",
+      "name": "Gateway Latency Spike / WebSocket Stale Quote Lag",
+      "family": "Family IV: Systemic & Operational Regimes (Gateway & Risk)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "latency_ms"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_15_compound_dual_shock",
+      "name": "Compound Dual-Shock (Flash Jump + Liquidity Drought)",
+      "family": "Family IV: Systemic & Operational Regimes (Gateway & Risk)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "is_shock",
+        "spread_cents"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_16_compound_triple_shock",
+      "name": "Compound Triple-Shock (Beta Contagion + Trend Breakout + TWAP Lag)",
+      "family": "Family IV: Systemic & Operational Regimes (Gateway & Risk)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "is_shock",
+        "macro_trend",
+        "rem"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_17_toxic_mm_pullback",
+      "name": "Toxic MM Fade / Jane Street & Wintermute Quote Pullout",
+      "family": "Family V: Institutional Liquidity & Execution Regimes",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "l2_resting_contracts",
+        "mm_fade"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_18_negative_spread_inversion",
+      "name": "Negative Spread Inversion / Crossed Book Collision (Ask < Bid)",
+      "family": "Family V: Institutional Liquidity & Execution Regimes",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "book_crossed",
+        "spread_cents"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_19_ntp_clock_skew",
+      "name": "NTP Server Clock Skew / Settlement Timestamp Drift (>250ms)",
+      "family": "Family V: Institutional Liquidity & Execution Regimes",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "clock_skew_ms"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_20_asymmetric_depth_skew",
+      "name": "Asymmetric Depth Skew (Deep YES vs Empty NO Book)",
+      "family": "Family V: Institutional Liquidity & Execution Regimes",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "depth_skew_ratio",
+        "l2_resting_contracts"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_21_rpc_gateway_throttling",
+      "name": "RPC Gateway Throttling / Pyth Index Update Stall (4000ms delay)",
+      "family": "Family VI: Macro Market Structure & Saturation Regimes",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "rpc_delay_ms"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_22_tradfi_cash_close_pinning",
+      "name": "TradFi / CME Cash Close Pinning Shock (4:00 PM EST Pin)",
+      "family": "Family VI: Macro Market Structure & Saturation Regimes",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "tradfi_pinning"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_23_cftc_tier_cap_exhaustion",
+      "name": "CFTC Position Limit Exhaustion / Sizing Saturation",
+      "family": "Family VI: Macro Market Structure & Saturation Regimes",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "order_budget_dollars"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_24_adverse_whale_market_impact",
+      "name": "Whale Sweep Market Impact / L2 Fill Price Degradation ($2k-$4k)",
+      "family": "Family VI: Macro Market Structure & Saturation Regimes",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "l2_resting_contracts",
+        "order_budget_dollars"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_25_subsecond_iceberg_slicing",
+      "name": "Sub-Second Iceberg Slicing / Book Replenishment Decay (<120ms)",
+      "family": "Family VII: Advanced Execution Microstructure & Sub-Second Dynamics",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "iceberg_replenish_rate"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_26_pyth_subslot_oracle_jitter",
+      "name": "Pyth Network Sub-Slot Streaming (<20ms) / Solana Shred Jitter",
+      "family": "Family VII: Advanced Execution Microstructure & Sub-Second Dynamics",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "pyth_subslot_latency_ms"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_27_cross_exchange_delta_arbitrage",
+      "name": "Cross-Exchange Delta-Neutral Basis Disconnect (Kalshi vs Perp)",
+      "family": "Family VII: Advanced Execution Microstructure & Sub-Second Dynamics",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "basis_bps",
+        "cross_exchange_basis_spread"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_28_kalman_mean_reversion_whipsaw",
+      "name": "Online Kalman-Filtered Mean-Reversion Drift Whipsaw (theta > 0.08)",
+      "family": "Family VII: Advanced Execution Microstructure & Sub-Second Dynamics",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "kalman_mean_rev_theta"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_29_hawkes_flow_toxicity_cluster",
+      "name": "Hawkes Process Self-Exciting Order Flow Toxicity (VPIN Burst)",
+      "family": "Family VIII: Order Flow Toxicity, Information Asymmetry & Adverse Selection",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "hawkes_intensity_vpin",
+        "spread_cents"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_30_mev_sandwich_latency_arbitrage",
+      "name": "Toxic MEV Front-Running & Cross-Venue Latency Arbitrage",
+      "family": "Family VIII: Order Flow Toxicity, Information Asymmetry & Adverse Selection",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "mev_sandwich_risk",
+        "private_mempool_routed"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_31_quote_fade_replenishment_exhaustion",
+      "name": "Institutional MM Quote Fade & Replenishment Exhaustion",
+      "family": "Family VIII: Order Flow Toxicity, Information Asymmetry & Adverse Selection",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "iceberg_replenish_rate",
+        "l2_resting_contracts"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_32_cross_asset_leadlag_breakdown",
+      "name": "High-Frequency Cross-Asset Lead-Lag Propagation Breakdown",
+      "family": "Family VIII: Order Flow Toxicity, Information Asymmetry & Adverse Selection",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "lead_bps"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_33_pyth_confidence_interval_explosion",
+      "name": "Pyth Oracle Confidence Interval (sigma_pyth) Flash Explosion",
+      "family": "Family IX: Oracles, Boundaries & Tail Events",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "pyth_confidence_pct"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_34_settlement_timestamp_boundary_racing",
+      "name": "Settlement Timestamp Boundary Racing (14:59.950 Quantization)",
+      "family": "Family IX: Oracles, Boundaries & Tail Events",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "settlement_boundary_subsecond_ms"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_35_regulatory_halt_circuit_breaker",
+      "name": "Exchange Matching Engine Circuit Breaker & Blackout Throttling",
+      "family": "Family IX: Oracles, Boundaries & Tail Events",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "exchange_circuit_breaker"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_36_extreme_fat_tail_black_swan",
+      "name": "Extreme 6-Sigma Jump-Diffusion Black Swan (Tail Shock)",
+      "family": "Family IX: Oracles, Boundaries & Tail Events",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "is_shock",
+        "price_velocity_60s_sigma"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_37_catastrophic_velocity_jump_breaker",
+      "name": "Catastrophic 60s Velocity Shock (|Delta P_60s| > 4.5 sigma)",
+      "family": "Family X: Catastrophic Tail Risk & Jump-Diffusion Dynamics",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "is_shock",
+        "price_velocity_60s_sigma"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_38_merton_jump_diffusion_regime",
+      "name": "Dynamic Merton Jump-Diffusion Poisson Arrival Shock (lambda_J > 0.4)",
+      "family": "Family X: Catastrophic Tail Risk & Jump-Diffusion Dynamics",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "merton_jump_intensity"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_39_extreme_kurtosis_skew_inversion",
+      "name": "Extreme Kurtosis / Implied Volatility Smile Inversion (Skew Whipsaw)",
+      "family": "Family X: Catastrophic Tail Risk & Jump-Diffusion Dynamics",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "heston_vol_skew_ratio",
+        "lead_bps"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_40_flash_liquidation_cascade",
+      "name": "Multi-Venue Flash Liquidation Cascade (>$100M Liquidations in 10s)",
+      "family": "Family X: Catastrophic Tail Risk & Jump-Diffusion Dynamics",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "is_shock",
+        "l2_resting_contracts",
+        "price_velocity_60s_sigma"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_41_triangular_leadlag_propagation",
+      "name": "Triangular Cross-Asset Lead-Lag (BTC -> ETH -> SOL/DOGE Cascade)",
+      "family": "Family XI: Triangular High-Frequency Lead-Lag & Routing",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "lead_bps",
+        "triangular_lead_bonus_bps"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_42_fpga_submicrosecond_sniping",
+      "name": "Sub-Microsecond FPGA Matching Engine Sniping (<350ns Execution)",
+      "family": "Family XI: Triangular High-Frequency Lead-Lag & Routing",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "fpga_hardware_submicrosecond",
+        "latency_ms"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_43_darkpool_private_mempool_routing",
+      "name": "Decentralized Dark Pool / Private Mempool Routing (Flashbots/Jito)",
+      "family": "Family XI: Triangular High-Frequency Lead-Lag & Routing",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "mev_sandwich_risk",
+        "private_mempool_routed"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_44_cross_venue_taker_curve_convexity",
+      "name": "Taker-Only Fixed-Budget AMM Convexity Sweep (Buy Over/Under UI)",
+      "family": "Family XI: Triangular High-Frequency Lead-Lag & Routing",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "amm_spread_gouging",
+        "order_budget_dollars"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_45_amm_dynamic_spread_gouging",
+      "name": "Platform AMM Dynamic Spread Gouging (Taker Curve Widening 2c to 12c)",
+      "family": "Family XII: Game-Theoretic, Algorithmic Collusion & Terminal Mechanics",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "amm_spread_gouging",
+        "spread_cents"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_46_subsecond_strike_reanchoring",
+      "name": "Sub-Second Strike Re-Anchoring Jitter (Quantization Snapping)",
+      "family": "Family XII: Game-Theoretic, Algorithmic Collusion & Terminal Mechanics",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "clock_skew_ms",
+        "subtick_strike_distance_bps"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_47_predatory_rfq_latency_shaving",
+      "name": "Predatory Broker RFQ Latency Shaving (+150ms Execution Inject)",
+      "family": "Family XII: Game-Theoretic, Algorithmic Collusion & Terminal Mechanics",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "rfq_latency_injected_ms"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_48_terminal_quantum_settlement_dispute",
+      "name": "Terminal Micro-Tick Settlement Dispute (Pyth vs CEX +/- 0.1 bps)",
+      "family": "Family XII: Game-Theoretic, Algorithmic Collusion & Terminal Mechanics",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "lead_bps",
+        "terminal_settlement_dispute"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_49_solarflare_efvi_kernel_bypass",
+      "name": "Hardware-Accelerated Direct Kernel Bypass (Solarflare EF_VI <1.2ms)",
+      "family": "Family XIII: High-Frequency Hardware, Kernel & Bypass Regimes",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "kernel_bypass_active",
+        "latency_ms"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_50_pcie_dma_ring_buffer_overrun",
+      "name": "PCIe DMA Ring Buffer Packet Drop & Overflow under Burst Ticks",
+      "family": "Family XIII: High-Frequency Hardware, Kernel & Bypass Regimes",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "dma_packet_dropped",
+        "latency_ms"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_51_cpu_core_cache_thrashing",
+      "name": "Multi-Core Cache Coherence Thrash & Thread Pinning Jitter",
+      "family": "Family XIII: High-Frequency Hardware, Kernel & Bypass Regimes",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "cache_thrashing",
+        "latency_ms"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_52_ptp_hardware_nic_timestamp_drift",
+      "name": "PTP/IEEE-1588 Hardware NIC Timestamp Sync Drift (>5 microseconds)",
+      "family": "Family XIII: High-Frequency Hardware, Kernel & Bypass Regimes",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "ptp_sync_drift_us"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_53_neural_hawkes_flow_excitation",
+      "name": "Machine Learning Hawkes Kernel Calibration (Neural Hawkes alpha_theta > 0.65)",
+      "family": "Family XIV: Advanced Machine Learning & Hawkes Dynamics",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "neural_hawkes_excitation"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_54_subtick_quantization_snapping",
+      "name": "Sub-Tick Quantization Snapping Invariant for Strike Re-Anchoring",
+      "family": "Family XIV: Advanced Machine Learning & Hawkes Dynamics",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "rem",
+        "subtick_strike_distance_bps"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_55_cross_dex_synthetic_gamma_hedge",
+      "name": "Real-Time Cross-DEX Synthetic Gamma Hedging (Hyperliquid/dYdX Perp)",
+      "family": "Family XIV: Advanced Machine Learning & Hawkes Dynamics",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "gamma_hedged_perp_pnl",
+        "lead_bps"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_56_byzantine_multi_oracle_consensus",
+      "name": "Decentralized Multi-Oracle Consensus Quorum (BFT Median Dispersion > 3 bps)",
+      "family": "Family XIV: Advanced Machine Learning & Hawkes Dynamics",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "multi_oracle_dispersion_bps"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_57_clearinghouse_margin_haircut",
+      "name": "Clearinghouse Collateral Haircut Shock (Intraday Position Freeze)",
+      "family": "Family XV: Sovereign, Counterparty & Exchange Clearing Mechanics",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "clearing_margin_shock",
+        "order_budget_dollars"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_58_perpetual_funding_rate_whipsaw",
+      "name": "Perpetual Funding Rate Squeeze Whipsaw (Annualized Funding > 150%)",
+      "family": "Family XV: Sovereign, Counterparty & Exchange Clearing Mechanics",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "basis_bps",
+        "funding_rate_annualized"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_59_validator_reorg_mev_censorship",
+      "name": "Solana/Ethereum Validator Short-Range Block Reorg & Censorship",
+      "family": "Family XV: Sovereign, Counterparty & Exchange Clearing Mechanics",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "latency_ms",
+        "validator_reorg_delay"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_60_liquidity_sink_terminal_blackhole",
+      "name": "Liquidity Sink Terminal Black Hole (Cross-Venue Cascade Shock)",
+      "family": "Family XV: Sovereign, Counterparty & Exchange Clearing Mechanics",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "is_shock",
+        "l2_resting_contracts",
+        "price_velocity_60s_sigma",
+        "systemic_blackhole_shock"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_61_macro_economic_calendar_pre_release",
+      "name": "Macro Economic Calendar Pre-Release Freeze Invariant (CPI/FOMC < 180s)",
+      "family": "Family XVI: Macro-Economic Calendar, Central Bank & News Release Regimes",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "is_shock",
+        "time_to_macro_release_seconds"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_62_mean_reversion_halflife_decay",
+      "name": "Mean-Reversion Half-Life Decay Trap (tau_1/2 < 90s Momentum Dissipation)",
+      "family": "Family XVI: Macro-Economic Calendar, Central Bank & News Release Regimes",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "mean_reversion_halflife_seconds"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_63_cross_venue_dark_pool_aggregation",
+      "name": "Automated Cross-Venue Dark Pool Liquidity Aggregator (Kalshi/Poly/HL)",
+      "family": "Family XVI: Macro-Economic Calendar, Central Bank & News Release Regimes",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "cross_venue_aggregated_depth",
+        "order_budget_dollars"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_64_onchain_jito_tip_bundle_auction",
+      "name": "On-Chain MEV Bundle Auction Bidding & Jito Tip Optimization (<10ms Slot 0)",
+      "family": "Family XVI: Macro-Economic Calendar, Central Bank & News Release Regimes",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "jito_bundle_tip_optimized",
+        "latency_ms"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_65_continuous_drl_ppo_dynamic_kelly",
+      "name": "Continuous Deep Reinforcement Learning Policy for Dynamic Kelly Multiplier",
+      "family": "Family XVII: Deep Reinforcement Learning & Adaptive Portfolio Regimes",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "drl_dynamic_kelly_lambda"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_66_cross_asset_regime_transition_clustering",
+      "name": "Gaussian Mixture Model (GMM) Hidden Regime Transition Clustering",
+      "family": "Family XVII: Deep Reinforcement Learning & Adaptive Portfolio Regimes",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "gmm_regime_cluster_entropy"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_67_endogenous_liquidity_drain_spiral",
+      "name": "Endogenous Liquidity Drain & Cascade Unwinding Spiral (De-leveraging)",
+      "family": "Family XVII: Deep Reinforcement Learning & Adaptive Portfolio Regimes",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "cross_venue_aggregated_depth",
+        "l2_resting_contracts",
+        "spread_cents"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_68_asymmetric_information_vpin_toxicity",
+      "name": "High-Frequency Volume-Synchronized Probability of Toxicity (VPIN > 0.75)",
+      "family": "Family XVII: Deep Reinforcement Learning & Adaptive Portfolio Regimes",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "hawkes_intensity_vpin"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_69_cross_chain_wormhole_bridge_delay",
+      "name": "Cross-Chain Wormhole / Pythnet Bridge Relayer Delay (>400ms Relay Lag)",
+      "family": "Family XVIII: Quantum Settlement, Cross-Chain Bridge & Finality Mechanics",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "wormhole_relay_delay_ms"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_70_subatomic_settlement_quantum_tie",
+      "name": "Subatomic Discrete Quantum Settlement Tie (|P_settle - K| < 0.05 bps)",
+      "family": "Family XVIII: Quantum Settlement, Cross-Chain Bridge & Finality Mechanics",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "rem",
+        "subtick_strike_distance_bps"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_71_central_counterparty_resolution_halt",
+      "name": "Central Counterparty Clearinghouse Emergency Resolution Halt",
+      "family": "Family XVIII: Quantum Settlement, Cross-Chain Bridge & Finality Mechanics",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "ccp_emergency_halt"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_72_macro_geopolitical_cyber_flash_disconnect",
+      "name": "Macro Geopolitical & Transcontinental Fiber Disconnect (BGP Partition)",
+      "family": "Family XVIII: Quantum Settlement, Cross-Chain Bridge & Finality Mechanics",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "bgp_fiber_partition",
+        "latency_ms"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_73_heston_stochastic_vol_pde_skew",
+      "name": "Quantum Asymmetric Volatility Surface Calibration (2D Heston PDE Skew)",
+      "family": "Family XIX: Stochastic Volatility Surfaces & Quantitative PDEs",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "heston_vol_skew_ratio"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_74_cross_exchange_triangular_arbitrage",
+      "name": "Real-Time Cross-Exchange Triangular Arbitrage Micro-Routing Cycle",
+      "family": "Family XIX: Stochastic Volatility Surfaces & Quantitative PDEs",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "lead_bps",
+        "triangular_arb_cycle_pnl"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_75_automated_hardware_cancellation_sniping",
+      "name": "Automated Sub-Microsecond Hardware Cancellation Sniping (<150ns FPGA Gate)",
+      "family": "Family XIX: Stochastic Volatility Surfaces & Quantitative PDEs",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "fpga_hardware_cancel_active",
+        "latency_ms"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_76_multivalidator_private_rpc_mesh",
+      "name": "Decentralized Multi-Validator Private RPC Mesh (<8ms Global Mesh)",
+      "family": "Family XIX: Stochastic Volatility Surfaces & Quantitative PDEs",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "private_rpc_mesh_latency_ms",
+        "pyth_subslot_latency_ms"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_77_zk_snark_oracle_proof_verification",
+      "name": "Zero-Knowledge Proof Settlement Verification (zk-SNARK State Proofs)",
+      "family": "Family XX: Cryptographic Zero-Knowledge Settlement & Consensus",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "zk_snark_proof_verified"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_78_flash_loan_governance_oracle_manipulation",
+      "name": "Flash Loan Governance Attack & Synthetic Index Manipulation Shock",
+      "family": "Family XX: Cryptographic Zero-Knowledge Settlement & Consensus",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "flash_loan_attack"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_79_consensus_slashing_validator_blackout",
+      "name": "Proof-of-Stake Validator Correlated Slashing Cascade Blackout",
+      "family": "Family XX: Cryptographic Zero-Knowledge Settlement & Consensus",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "validator_slashed_blackout"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_80_quantum_cryptographic_signature_collision",
+      "name": "Post-Quantum Cryptographic Signature Collision & Quantization Racing",
+      "family": "Family XX: Cryptographic Zero-Knowledge Settlement & Consensus",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "clock_skew_ms"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_81_sovereign_fiat_fx_depegging_shock",
+      "name": "Sovereign Fiat / Stablecoin FX Depegging Shock (USDT/USDC Basis > 200 bps)",
+      "family": "Family XXI: Global Macro Liquidity & Institutional Settlement Finality",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "basis_bps",
+        "fx_depeg_basis_bps"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_82_continuous_optimal_stopping_american",
+      "name": "Continuous Optimal Stopping & American Early-Exercise Invariant",
+      "family": "Family XXI: Global Macro Liquidity & Institutional Settlement Finality",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "lead_bps",
+        "rem"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_83_recursive_adversarial_ai_market_making",
+      "name": "Recursive Adversarial AI Market Making (Adversarial RL Stop-Hunt)",
+      "family": "Family XXI: Global Macro Liquidity & Institutional Settlement Finality",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "adversarial_rl_stophunt",
+        "spread_cents"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_84_terminal_singularity_blackhole_cascade",
+      "name": "Terminal Singularity Global Cross-Asset Liquidity Evacuation Shock",
+      "family": "Family XXI: Global Macro Liquidity & Institutional Settlement Finality",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "l2_resting_contracts",
+        "price_velocity_60s_sigma",
+        "systemic_blackhole_shock"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_85_subnanosecond_asic_gate_propagation",
+      "name": "Sub-Nanosecond ASIC Hardware Logic Compilation (<18ns SystemVerilog Pipelining)",
+      "family": "Family XXII: Sub-Nanosecond ASIC Hardware Logic Compilation & Synthesis",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "asic_gate_latency_ns",
+        "latency_ms",
+        "lead_bps",
+        "triangular_lead_bonus_bps"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_86_pcie_gen5_serdes_lane_jitter",
+      "name": "PCIe Gen5 SerDes Lane De-Skew Jitter & Transceiver Eye-Diagram Degradation",
+      "family": "Family XXII: Sub-Nanosecond ASIC Hardware Logic Compilation & Synthesis",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "latency_ms",
+        "serdes_lane_jitter_ps"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_87_fpga_bram_lookup_dualport_contention",
+      "name": "FPGA BRAM Lookup Table Dual-Port Contention & Synthesis Timing Violations",
+      "family": "Family XXII: Sub-Nanosecond ASIC Hardware Logic Compilation & Synthesis",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "bram_contention_flag",
+        "latency_ms"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_88_asynchronous_clock_domain_metastability",
+      "name": "Asynchronous Clock Domain Crossing (CDC) Metastability & Synchronization Glitches",
+      "family": "Family XXII: Sub-Nanosecond ASIC Hardware Logic Compilation & Synthesis",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "cdc_metastability_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_89_onchain_dynamic_flash_hedging_contract",
+      "name": "On-Chain Dynamic Flash-Hedging Smart Contract Execution (Atomic Arbitrum/HL)",
+      "family": "Family XXIII: On-Chain Dynamic Flash-Hedging Smart Contract & Liquidity Pools",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "flash_hedge_atomic_active",
+        "flash_hedge_pnl",
+        "lead_bps"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_90_cross_contract_reentrancy_gas_spike",
+      "name": "Cross-Contract Reentrancy Guard Gas Spike & Block Limit Exhaustion (>120 gwei)",
+      "family": "Family XXIII: On-Chain Dynamic Flash-Hedging Smart Contract & Liquidity Pools",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "gas_gwei_spike"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_91_constant_product_invariant_slippage",
+      "name": "Decentralized AMM Constant-Product Invariant Slip & Dynamic Liquidity Trap",
+      "family": "Family XXIII: On-Chain Dynamic Flash-Hedging Smart Contract & Liquidity Pools",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "amm_constant_product_slip"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_92_multihop_dex_sandwich_inclusion_racing",
+      "name": "Multi-Hop DEX Routing Slippage Sandwich & Builder Bundle Inclusion Racing",
+      "family": "Family XXIII: On-Chain Dynamic Flash-Hedging Smart Contract & Liquidity Pools",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "multihop_sandwich_risk"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_93_multi_regime_bayesian_particle_filter",
+      "name": "Multi-Regime Bayesian Particle Filter (50,000 SMC Online Calibration)",
+      "family": "Family XXIV: Bayesian Particle Filters, Stat-Arb Baskets & Formal Lean 4 Verification",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "particle_filter_drift_var",
+        "particle_filter_n_eff"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_94_cross_asset_basket_statarb_arbitrage",
+      "name": "Cross-Asset Basket Stat-Arb Synthetic Index Arbitrage (Cointegrated Baskets)",
+      "family": "Family XXIV: Bayesian Particle Filters, Stat-Arb Baskets & Formal Lean 4 Verification",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "basket_statarb_cointegration_z",
+        "basket_statarb_pnl",
+        "lead_bps"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_95_formal_lean4_theorem_prover_verification",
+      "name": "Formal Lean 4 Theorem Prover Verification of All Invariant Bounds (0 sorrys)",
+      "family": "Family XXIV: Bayesian Particle Filters, Stat-Arb Baskets & Formal Lean 4 Verification",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "lead_bps",
+        "lean4_formal_proof_verified"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_96_total_global_systemic_singularity_cascade",
+      "name": "Total Global Systemic Settlement Singularity Cascade & Universal Multi-Venue Blackhole",
+      "family": "Family XXIV: Bayesian Particle Filters, Stat-Arb Baskets & Formal Lean 4 Verification",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "bgp_fiber_partition",
+        "flash_loan_attack",
+        "l2_resting_contracts",
+        "price_velocity_60s_sigma",
+        "systemic_blackhole_shock"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_97_subpicosecond_photonic_optical_interconnect",
+      "name": "Sub-Picosecond Photonic Optical Computing Interconnect (<850fs CPO Lane Sync)",
+      "family": "Family XXV: Photonic Optical Interconnects, Homomorphic Encryption & Neural SDEs (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "latency_ms",
+        "lead_bps",
+        "photonic_cpo_jitter_fs",
+        "triangular_lead_bonus_bps"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_98_deep_equilibrium_neural_sde_divergence",
+      "name": "Deep Equilibrium Neural SDE Solver Non-Convergence Trap (Infinite Horizon SDE)",
+      "family": "Family XXV: Photonic Optical Interconnects, Homomorphic Encryption & Neural SDEs (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "neural_sde_diverged"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_99_homomorphic_encrypted_order_routing_delay",
+      "name": "Hardware-Accelerated Homomorphic Encrypted Routing Delay (CKKS Ciphertext >45ms)",
+      "family": "Family XXV: Photonic Optical Interconnects, Homomorphic Encryption & Neural SDEs (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "homomorphic_routing_delay_ms"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_100_automated_lean4_verilog_ams_synthesis_glitch",
+      "name": "Full Automated Synthesis Pipeline Glitch (Lean 4 Proof to Verilog-AMS Synthesis)",
+      "family": "Family XXV: Photonic Optical Interconnects, Homomorphic Encryption & Neural SDEs (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "verilog_ams_synthesis_glitch"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_101_cross_margining_liquidation_cascade",
+      "name": "Multi-Asset Cross-Margining Liquidation Arbitrage Engine (Distressed Sweep)",
+      "family": "Family XXVI: Cross-Margining Liquidation, MEV-Boost PBS & Funding Arbitrage (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "cross_margin_haircut_shock",
+        "order_budget_dollars"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_102_mev_boost_pbs_proposer_racing_shock",
+      "name": "Decentralized MEV-Boost PBS Auctioneer Proposer Racing (Slot 0 Inversion)",
+      "family": "Family XXVI: Cross-Margining Liquidation, MEV-Boost PBS & Funding Arbitrage (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "pbs_proposer_inversion_risk"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_103_cross_exchange_basis_funding_arbitrage",
+      "name": "Cross-Exchange Basis Funding Arbitrage Harvester (Perp Funding Spread >180%)",
+      "family": "Family XXVI: Cross-Margining Liquidation, MEV-Boost PBS & Funding Arbitrage (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "funding_rate_annualized",
+        "funding_spread_harvest_pnl",
+        "lead_bps"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_104_zk_rollup_l3_settlement_bridge_delay",
+      "name": "Decentralized zk-Rollup L3 Direct Settlement Bridge Delay (State Root Stall >300ms)",
+      "family": "Family XXVI: Cross-Margining Liquidation, MEV-Boost PBS & Funding Arbitrage (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "zk_rollup_bridge_delay_ms"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_105_students_t_copula_tail_dependence_shock",
+      "name": "Continuous Student's t-Copula Tail Dependence Decoupling (Asymmetric Tail Burst)",
+      "family": "Family XXVII: Jump-Diffusion Copulas, RLMF Self-Synthesis & Adversarial Red-Teaming (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "copula_dof",
+        "copula_tail_burst"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_106_quantum_random_walk_non_markovian_memory",
+      "name": "Quantum Random Walk Pricing for Non-Markovian Memory Regimes (Hurst H > 0.72)",
+      "family": "Family XXVII: Jump-Diffusion Copulas, RLMF Self-Synthesis & Adversarial Red-Teaming (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "hurst_non_markovian"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_107_rlmf_self_synthesizing_invariant_drift",
+      "name": "Reinforcement Learning from Market Feedback (RLMF) Self-Synthesizing Invariant Drift",
+      "family": "Family XXVII: Jump-Diffusion Copulas, RLMF Self-Synthesis & Adversarial Red-Teaming (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "rlmf_invariant_drift"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_108_adversarial_red_teaming_crucible_attack",
+      "name": "Autonomous Multi-Model Adversarial Red-Teaming Crucible (Collusion Attack)",
+      "family": "Family XXVII: Jump-Diffusion Copulas, RLMF Self-Synthesis & Adversarial Red-Teaming (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "adversarial_crucible_attack"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_109_subfemtosecond_fiber_laser_optical_phase_slip",
+      "name": "Sub-Femtosecond Fiber-Laser Optical Phase Slip (<50fs PTP Optical Phase Locking)",
+      "family": "Family XXVIII: Sub-Femtosecond Optical Phase Locking & Cryogenic Superconducting Logic (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "latency_ms",
+        "lead_bps",
+        "optical_phase_slip_fs",
+        "triangular_lead_bonus_bps"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_110_cryogenic_sfq_qubit_thermal_quench",
+      "name": "Cryogenic Superconducting Rapid Single Flux Quantum (RSFQ/SFQ) Logic Thermal Quench",
+      "family": "Family XXVIII: Sub-Femtosecond Optical Phase Locking & Cryogenic Superconducting Logic (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "latency_ms",
+        "sfq_thermal_quench_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_111_silicon_photonic_ring_resonator_thermal_drift",
+      "name": "Integrated Silicon Photonic Micro-Ring Resonator Thermal Drift (<0.02nm Cavity)",
+      "family": "Family XXVIII: Sub-Femtosecond Optical Phase Locking & Cryogenic Superconducting Logic (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "photonic_ring_drift_nm"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_112_quantum_coherent_state_decoherence",
+      "name": "Quantum Coherent State Optomechanical Decoherence & Squeezed Light Partition",
+      "family": "Family XXVIII: Sub-Femtosecond Optical Phase Locking & Cryogenic Superconducting Logic (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "quantum_optomechanical_decoherence"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_113_qubo_ising_hamiltonian_spin_glass_frustration",
+      "name": "Quantum Annealing QUBO Ising Hamiltonian Spin-Glass Frustration (Spectral Gap Collapse)",
+      "family": "Family XXIX: Quantum Annealing & Recursive STARK Proof Aggregation (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "lead_bps",
+        "qubo_spectral_gap"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_114_multiprover_zk_stark_recursion_soundness_split",
+      "name": "Multi-Agent Zero-Knowledge Proof Aggregation via Recursive STARKs Soundness Split",
+      "family": "Family XXIX: Quantum Annealing & Recursive STARK Proof Aggregation (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "stark_recursion_soundness_split"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_115_decentralized_multiprover_settlement_arbitration_delay",
+      "name": "Decentralized Multi-Prover Rollup Settlement Finality Arbitration Timeout (>350ms)",
+      "family": "Family XXIX: Quantum Annealing & Recursive STARK Proof Aggregation (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "multiprover_arbitration_delay_ms"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_116_realtime_merkle_sum_tree_solvency_inconsistency",
+      "name": "Real-Time Merkle-Sum Tree Proof-of-Solvency State Inconsistency & Cryptographic Mismatch",
+      "family": "Family XXIX: Quantum Annealing & Recursive STARK Proof Aggregation (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "merkle_solvency_inconsistent"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_117_rough_bergomi_hurst_subdiffusive_crash",
+      "name": "Adaptive Rough Volatility Fractional Jump Solvers (Rough Bergomi Hurst H < 0.10 Singularity)",
+      "family": "Family XXX: Sub-Diffusive Rough Volatility & Neuromorphic SNN Event Dynamics (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "rough_bergomi_hurst"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_118_neuromorphic_snn_synaptic_event_backpressure",
+      "name": "Neuromorphic Spiking Neural Network (SNN) Synaptic Spike Backpressure & Queue Saturation",
+      "family": "Family XXX: Sub-Diffusive Rough Volatility & Neuromorphic SNN Event Dynamics (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "latency_ms",
+        "lead_bps",
+        "triangular_lead_bonus_bps"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_119_kolmogorov_smirnov_non_gaussian_tail_fracture",
+      "name": "Extreme Non-Gaussian Tail Fracture (Kolmogorov-Smirnov Statistic D_KS > 0.18)",
+      "family": "Family XXX: Sub-Diffusive Rough Volatility & Neuromorphic SNN Event Dynamics (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "ks_divergence_statistic"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_120_high_dimensional_fractional_cointegration_break",
+      "name": "High-Dimensional Cross-Asset Fractional Cointegration Error Break (F-VECM Rank Collapse)",
+      "family": "Family XXX: Sub-Diffusive Rough Volatility & Neuromorphic SNN Event Dynamics (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "f_vecm_cointegration_break"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_121_topological_majorana_zero_modes_phase_drift",
+      "name": "Coherent Topological Quantum Computing (Majorana Zero Modes Parity Drift)",
+      "family": "Family XXXI: Topological Quantum Computing & Majorana Zero Modes (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "latency_ms",
+        "lead_bps",
+        "majorana_parity_error_ppm",
+        "triangular_lead_bonus_bps"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_122_non_abelian_anyon_braiding_noise",
+      "name": "Non-Abelian Anyon Quasiparticle Braiding Phase Noise & Geometric Phase Perturbation",
+      "family": "Family XXXI: Topological Quantum Computing & Majorana Zero Modes (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "anyon_braiding_noise_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_123_fractional_quantum_hall_edge_break",
+      "name": "Fractional Quantum Hall Effect (FQHE) Edge Mode Disruption & Anyon Density Depletion",
+      "family": "Family XXXI: Topological Quantum Computing & Majorana Zero Modes (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "fqhe_edge_break_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_124_topological_qubit_decoherence_quench",
+      "name": "Topologically Protected Qubit Decoherence Quench & Parity Measurement Inversion",
+      "family": "Family XXXI: Topological Quantum Computing & Majorana Zero Modes (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "topological_qubit_quench"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_125_evt_frechet_weibull_maxima_adversarial_excursion",
+      "name": "EVT Fr\u00e9chet-Weibull Maxima Adversarial Price Excursion (>20 bps / 60s)",
+      "family": "Family XXXII: Extreme Value Theory (EVT) & Tail Risk Maxima (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "evt_frechet_tail_max_bps",
+        "latency_ms",
+        "lead_bps",
+        "triangular_lead_bonus_bps"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_126_gpd_pickands_balkema_tail_explosion",
+      "name": "Generalized Pareto Distribution (GPD) Pickands-Balkema Tail Explosion",
+      "family": "Family XXXII: Extreme Value Theory (EVT) & Tail Risk Maxima (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "gpd_tail_explosion_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_127_asymmetric_power_law_alpha_collapse",
+      "name": "Asymmetric Fat-Tailed Power Law Exponent Collapse (alpha < 1.8)",
+      "family": "Family XXXII: Extreme Value Theory (EVT) & Tail Risk Maxima (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "power_law_alpha"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_128_extreme_maximum_adverse_excursion_shock",
+      "name": "Extreme Maximum Adverse Excursion (MAE) Intraday Drawdown Shock",
+      "family": "Family XXXII: Extreme Value Theory (EVT) & Tail Risk Maxima (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "extreme_mae_shock_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_129_hyperbolic_poincare_disk_contagion",
+      "name": "Non-Euclidean Hyperbolic Graph Embedding Contagion (Poincar\u00e9 Disk K < -0.85)",
+      "family": "Family XXXIII: Non-Euclidean Hyperbolic Graph Financial Contagion (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "hyperbolic_poincare_curvature",
+        "latency_ms",
+        "lead_bps",
+        "triangular_lead_bonus_bps"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_130_riemannian_manifold_ricci_curvature_singularity",
+      "name": "Riemannian Manifold Ricci Curvature Liquidity Singularity",
+      "family": "Family XXXIII: Non-Euclidean Hyperbolic Graph Financial Contagion (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "ricci_curvature_singularity"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_131_complex_network_cascading_default_percolation",
+      "name": "High-Dimensional Complex Network Cascading Default Percolation",
+      "family": "Family XXXIII: Non-Euclidean Hyperbolic Graph Financial Contagion (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "complex_network_percolation"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_132_ultrametric_tree_collateral_partition",
+      "name": "Ultrametric Tree Distance Broker Collateral Partition",
+      "family": "Family XXXIII: Non-Euclidean Hyperbolic Graph Financial Contagion (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "ultrametric_partition_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_133_fhe_vdf_pbs_slot_auction_lag",
+      "name": "Fully Homomorphic Verifiable Delay Functions (FHE-VDF) PBS Slot Lag (>500ms)",
+      "family": "Family XXXIV: Cryptographic Verifiable Delay Functions & Timed Commitments (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "latency_ms",
+        "lead_bps",
+        "triangular_lead_bonus_bps",
+        "vdf_delay_ms"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_134_sequential_squaring_rsa_sluggishness",
+      "name": "Sequential Squaring Hidden-Order RSA Group Valuation Sluggishness",
+      "family": "Family XXXIV: Cryptographic Verifiable Delay Functions & Timed Commitments (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "rsa_sluggishness_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_135_zk_timed_commitment_unlock_deadlock",
+      "name": "Zero-Knowledge Timed Commitment Unlocking Deadlock",
+      "family": "Family XXXIV: Cryptographic Verifiable Delay Functions & Timed Commitments (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "zk_timed_deadlock_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_136_succinct_snark_prover_racing",
+      "name": "Succinct Non-Interactive Argument of Knowledge (SNARK) Prover Racing",
+      "family": "Family XXXIV: Cryptographic Verifiable Delay Functions & Timed Commitments (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "snark_prover_race_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_137_photonic_reservoir_optical_saturation",
+      "name": "Photonic Neuromorphic Reservoir Computing Optical Saturation (<10ns queue)",
+      "family": "Family XXXV: Photonic Neuromorphic Reservoir Computing & Optical Dynamics (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "latency_ms",
+        "lead_bps",
+        "triangular_lead_bonus_bps"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_138_microring_resonator_phase_bistability",
+      "name": "Optical Silicon Micro-Ring Resonator Nonlinear Phase Bistability",
+      "family": "Family XXXV: Photonic Neuromorphic Reservoir Computing & Optical Dynamics (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "microring_bistability_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_139_mzi_optical_matrix_dispersion",
+      "name": "Mach-Zehnder Interferometer (MZI) All-Optical Matrix Dispersion",
+      "family": "Family XXXV: Photonic Neuromorphic Reservoir Computing & Optical Dynamics (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "mzi_dispersion_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_140_laser_frequency_comb_wavelength_drift",
+      "name": "Femtosecond Laser Optical Frequency Comb Wavelength Drift",
+      "family": "Family XXXV: Photonic Neuromorphic Reservoir Computing & Optical Dynamics (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "frequency_comb_drift_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_141_metamaterial_waveguide_phase_break",
+      "name": "Quantum Metamaterial Microwave Waveguide Resonator Phase Coherence Break",
+      "family": "Family XXXVI: Metamaterial Waveguide Resonators & Ultra-Relativistic Time-Dilation Arbitration (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "waveguide_phase_break_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_142_inter_datacenter_subpicosecond_sync_shock",
+      "name": "Sub-Picosecond Inter-Datacenter (Chicago-NY4-Frankfurt) Phase Sync Shock",
+      "family": "Family XXXVI: Metamaterial Waveguide Resonators & Ultra-Relativistic Time-Dilation Arbitration (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "inter_dc_sync_shock_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_143_relativistic_lorentz_dilation_arbitration_drift",
+      "name": "Relativistic Lorentz Transformation Time-Dilation Arbitration Discrepancy",
+      "family": "Family XXXVI: Metamaterial Waveguide Resonators & Ultra-Relativistic Time-Dilation Arbitration (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "lorentz_dilation_drift_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_144_total_hyperdimensional_singularity_dissolution",
+      "name": "Total Universal Hyper-Dimensional Systemic Singularity Dissolution",
+      "family": "Family XXXVI: Metamaterial Waveguide Resonators & Ultra-Relativistic Time-Dilation Arbitration (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "hyperdimensional_singularity_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_145_pt_symmetric_optical_exceptional_point_drift",
+      "name": "Non-Hermitian PT-Symmetric Optical Waveguide Exceptional Point Sensitivity Divergence",
+      "family": "Family XXXVII: Non-Hermitian PT-Symmetric Photonics & Exceptional Points (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "latency_ms",
+        "lead_bps",
+        "pt_symmetry_impedance_ppm",
+        "triangular_lead_bonus_bps"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_146_optical_impedance_jump_sensing_perturbation",
+      "name": "Optical Impedance Jump Sensing Perturbation (<2ns Liquidity Sensing)",
+      "family": "Family XXXVII: Non-Hermitian PT-Symmetric Photonics & Exceptional Points (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "latency_ms",
+        "lead_bps",
+        "triangular_lead_bonus_bps"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_147_coalescing_eigenstate_transmission_loss",
+      "name": "Coalescing Eigenstate Asymmetric Transmission Loss & Non-Unitary Gain",
+      "family": "Family XXXVII: Non-Hermitian PT-Symmetric Photonics & Exceptional Points (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "coalescing_eigenstate_loss_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_148_spontaneous_pt_symmetry_breaking_transition",
+      "name": "Spontaneous PT-Symmetry Breaking Phase Transition",
+      "family": "Family XXXVII: Non-Hermitian PT-Symmetric Photonics & Exceptional Points (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "pt_symmetry_breaking_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_149_stochastic_geometry_ppp_mev_clustering",
+      "name": "Stochastic Geometry Poisson Point Process (PPP) MEV Builder Clustering",
+      "family": "Family XXXVIII: Stochastic Geometry & Spatial Point Process MEV Networks (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "latency_ms",
+        "lead_bps",
+        "ppp_cluster_density",
+        "triangular_lead_bonus_bps"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_150_voronoi_cell_liquidity_partitioning",
+      "name": "Voronoi Cell Liquidity Partitioning & Flashbot Proposer Dominance",
+      "family": "Family XXXVIII: Stochastic Geometry & Spatial Point Process MEV Networks (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "voronoi_partition_shock"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_151_delaunay_triangulation_relay_congestion",
+      "name": "Delaunay Triangulation Gossip Relay Network Congestion",
+      "family": "Family XXXVIII: Stochastic Geometry & Spatial Point Process MEV Networks (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "delaunay_congestion_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_152_spatial_inhomogeneous_poisson_anisotropy",
+      "name": "Spatial Inhomogeneous Poisson Process Latency Anisotropy",
+      "family": "Family XXXVIII: Stochastic Geometry & Spatial Point Process MEV Networks (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "spatial_anisotropy_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_153_fractional_rough_heston_memory_kernel",
+      "name": "Continuous Fractional Rough Heston Volatility Surface with Memory Kernels (H ~ 0.05)",
+      "family": "Family XXXIX: Fractional Rough Volatility & Volterra Integral Surfaces (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "latency_ms",
+        "lead_bps",
+        "rough_heston_hurst",
+        "triangular_lead_bonus_bps"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_154_riemann_liouville_singular_diffusion",
+      "name": "Riemann-Liouville Fractional Brownian Motion Singular Diffusion",
+      "family": "Family XXXIX: Fractional Rough Volatility & Volterra Integral Surfaces (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "riemann_liouville_singular_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_155_volterra_integral_non_markovian_persistence",
+      "name": "Volterra Integral Kernel Non-Markovian Shock Persistence",
+      "family": "Family XXXIX: Fractional Rough Volatility & Volterra Integral Surfaces (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "volterra_kernel_persistence_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_156_multiscale_volatility_roughness_inversion",
+      "name": "Multi-Scale Volatility Roughness Regime Inversion",
+      "family": "Family XXXIX: Fractional Rough Volatility & Volterra Integral Surfaces (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "multiscale_roughness_inversion_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_157_qeaba_quantum_ghz_decoherence",
+      "name": "Quantum Entanglement-Assisted Byzantine Agreement (QEABA) GHZ Decoherence",
+      "family": "Family XL: Quantum Entanglement & Zero-Round Consensus Arbitration (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "latency_ms",
+        "lead_bps",
+        "qeaba_ghz_fidelity",
+        "triangular_lead_bonus_bps"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_158_bell_state_measurement_fidelity_drop",
+      "name": "Bell State Measurement (BSM) Quantum Fidelity Drop (<95%)",
+      "family": "Family XL: Quantum Entanglement & Zero-Round Consensus Arbitration (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "bsm_fidelity_drop_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_159_teleportation_channel_noise_settlement_race",
+      "name": "Quantum Teleportation Channel Noise & Arbitrated Settlement Race",
+      "family": "Family XL: Quantum Entanglement & Zero-Round Consensus Arbitration (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "teleportation_noise_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_160_nonlocal_quantum_correlation_collapse",
+      "name": "Non-Local Quantum Correlation Collapse & Superdense Coding Split",
+      "family": "Family XL: Quantum Entanglement & Zero-Round Consensus Arbitration (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "nonlocal_correlation_collapse_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_161_deep_bsde_optimal_stopping_divergence",
+      "name": "Algorithmic Optimal Stopping via Deep Backward Stochastic Differential Equations (Deep BSDE)",
+      "family": "Family XLI: Deep Backward SDE & Non-Linear Viscosity Solutions (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "bsde_viscosity_gradient",
+        "latency_ms",
+        "lead_bps",
+        "triangular_lead_bonus_bps"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_162_hjb_viscosity_numerical_blowup",
+      "name": "Hamilton-Jacobi-Bellman (HJB) Viscosity Solution Numerical Blowup",
+      "family": "Family XLI: Deep Backward SDE & Non-Linear Viscosity Solutions (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "hjb_viscosity_blowup_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_163_nonlinear_drift_stochastic_control_singularity",
+      "name": "Non-Linear Drift Stochastic Control Singularity",
+      "family": "Family XLI: Deep Backward SDE & Non-Linear Viscosity Solutions (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "nonlinear_drift_control_singularity_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_164_feynman_kac_operator_dispersion",
+      "name": "High-Dimensional Feynman-Kac Operator Dispersion",
+      "family": "Family XLI: Deep Backward SDE & Non-Linear Viscosity Solutions (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "feynman_kac_dispersion_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_165_leo_satellite_gravitational_redshift_drift",
+      "name": "Ultra-Relativistic Gravitational Redshift Calibration in LEO Satellite Mesh",
+      "family": "Family XLII: Relativistic Satellite Mesh & Cosmic Ray Single-Event Upsets (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "gravitational_redshift_offset_ps",
+        "latency_ms",
+        "lead_bps",
+        "triangular_lead_bonus_bps"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_166_sagnac_effect_orbital_phase_offset",
+      "name": "Sagnac Effect Earth-Rotation Optical Phase Offset in Orbital Interlinks",
+      "family": "Family XLII: Relativistic Satellite Mesh & Cosmic Ray Single-Event Upsets (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "sagnac_orbital_offset_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_167_cosmic_ray_seu_memory_bitflip",
+      "name": "Cosmic Ray Single-Event Upset (SEU) Memory Bitflip in Aerospace Routing Engines",
+      "family": "Family XLII: Relativistic Satellite Mesh & Cosmic Ray Single-Event Upsets (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "cosmic_ray_seu_bitflip_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_168_total_cosmic_systemic_collapse",
+      "name": "Total Universal Cosmic Systemic Collapse & Spacetime Singularity Nullification",
+      "family": "Family XLII: Relativistic Satellite Mesh & Cosmic Ray Single-Event Upsets (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "total_cosmic_collapse_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_169_stochastic_volterra_jump_diffusion",
+      "name": "Non-Markovian Stochastic Volterra Jump-Diffusion with Fractional Brownian Bridge",
+      "family": "Family XLIII: Non-Markovian Stochastic Volterra Jump-Diffusions with Fractional Brownian Bridges (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "latency_ms",
+        "lead_bps",
+        "triangular_lead_bonus_bps",
+        "volterra_singular_kernel_ratio"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_170_singular_volterra_kernel_explosion",
+      "name": "Singular Volterra Kernel Cutoff & Fractional Bridge Variance Singularity",
+      "family": "Family XLIII: Non-Markovian Stochastic Volterra Jump-Diffusions with Fractional Brownian Bridges (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "singular_volterra_kernel_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_171_fractional_bridge_path_pinning_drift",
+      "name": "Fractional Brownian Bridge Path-Pinning Adverse Drift",
+      "family": "Family XLIII: Non-Markovian Stochastic Volterra Jump-Diffusions with Fractional Brownian Bridges (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "fractional_bridge_drift_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_172_non_markovian_jump_clustering_shock",
+      "name": "Non-Markovian Jump Clustering Hawkes Cascade",
+      "family": "Family XLIII: Non-Markovian Stochastic Volterra Jump-Diffusions with Fractional Brownian Bridges (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "non_markovian_jump_cluster_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_173_topological_braiding_cross_margining",
+      "name": "Quantum Topological Braiding Logic for Multi-Exchange Cross-Margining",
+      "family": "Family XLIV: Quantum Topological Braiding Logic for Multi-Exchange Non-Abelian Cross-Margining (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "latency_ms",
+        "lead_bps",
+        "triangular_lead_bonus_bps"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_174_non_abelian_braid_invariance_rupture",
+      "name": "Non-Abelian Braid Invariance Rupture & Cross-Venue Collateral Insolvency",
+      "family": "Family XLIV: Quantum Topological Braiding Logic for Multi-Exchange Non-Abelian Cross-Margining (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "braid_invariance_rupture_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_175_topological_knot_margin_deadlock",
+      "name": "Topological Knot Liquidation Deadlock & Margin Call Cascades",
+      "family": "Family XLIV: Quantum Topological Braiding Logic for Multi-Exchange Non-Abelian Cross-Margining (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "topological_knot_deadlock_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_176_multi_exchange_collateral_shred",
+      "name": "Multi-Exchange Cross-Margining Collateral Shredding Shock",
+      "family": "Family XLIV: Quantum Topological Braiding Logic for Multi-Exchange Non-Abelian Cross-Margining (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "multi_exchange_collateral_shred_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_177_hyperbolic_ricci_flow_curvature_smoothing",
+      "name": "Hyperbolic Ricci Flow Optimization for Dynamic LOB Surface Curvature",
+      "family": "Family XLV: Hyperbolic Ricci Flow Optimization for Dynamic Limit Order Book Surface Curvature (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "latency_ms",
+        "lead_bps",
+        "ricci_curvature_gradient",
+        "triangular_lead_bonus_bps"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_178_ricci_curvature_gradient_singularity",
+      "name": "Ricci Curvature Gradient Singularity & Micro-Liquidity Hole Shock",
+      "family": "Family XLV: Hyperbolic Ricci Flow Optimization for Dynamic Limit Order Book Surface Curvature (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "ricci_singularity_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_179_non_euclidean_liquidity_manifold_tear",
+      "name": "Non-Euclidean Liquidity Manifold Geometric Tearing",
+      "family": "Family XLV: Hyperbolic Ricci Flow Optimization for Dynamic Limit Order Book Surface Curvature (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "manifold_tear_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_180_hyperbolic_lob_volume_evaporation",
+      "name": "Hyperbolic LOB Top-of-Book Instant Volume Evaporation",
+      "family": "Family XLV: Hyperbolic Ricci Flow Optimization for Dynamic Limit Order Book Surface Curvature (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "lob_volume_evaporation_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_181_relativistic_geodesic_fiber_routing",
+      "name": "Relativistic Space-Time Geodesic Routing across Subsea Quantum Fiber",
+      "family": "Family XLVI: Relativistic Space-Time Geodesic Routing across Transcontinental Subsea Quantum Fiber (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "kerr_metric_drift_ps",
+        "latency_ms",
+        "lead_bps",
+        "triangular_lead_bonus_bps"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_182_kerr_spacetime_metric_drift_shock",
+      "name": "Kerr Spacetime Geodesic Metric Drift & Sub-Picosecond Timing Desynchronization",
+      "family": "Family XLVI: Relativistic Space-Time Geodesic Routing across Transcontinental Subsea Quantum Fiber (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "kerr_metric_shock_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_183_transcontinental_quantum_fiber_birefringence",
+      "name": "Transcontinental Quantum Fiber Polarization-Mode Dispersion & Birefringence",
+      "family": "Family XLVI: Relativistic Space-Time Geodesic Routing across Transcontinental Subsea Quantum Fiber (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "fiber_birefringence_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_184_global_relativistic_arbitration_lock",
+      "name": "Global Relativistic Timestamp Arbitration Consensus Lockout",
+      "family": "Family XLVI: Relativistic Space-Time Geodesic Routing across Transcontinental Subsea Quantum Fiber (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "relativistic_arbitration_lock_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_185_neuromorphic_memristive_crossbar_inversion",
+      "name": "Neuromorphic Memristive Crossbar Sub-Nanosecond Level-3 Matrix Inversion",
+      "family": "Family XLVII: Neuromorphic Memristive Crossbar Arrays for Sub-Nanosecond Level-3 Order Book Matrix Inversion (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "latency_ms",
+        "lead_bps",
+        "memristor_conductance_residual",
+        "triangular_lead_bonus_bps"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_186_memristive_conductance_drift_shock",
+      "name": "Memristor Crossbar Analog Conductance Drift & Matrix Inversion Residual Blowup",
+      "family": "Family XLVII: Neuromorphic Memristive Crossbar Arrays for Sub-Nanosecond Level-3 Order Book Matrix Inversion (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "memristor_conductance_drift_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_187_crossbar_sneak_path_current_leakage",
+      "name": "Crossbar Sneak-Path Parasitic Current Leakage & Taker Curve Error",
+      "family": "Family XLVII: Neuromorphic Memristive Crossbar Arrays for Sub-Nanosecond Level-3 Order Book Matrix Inversion (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "sneak_path_leakage_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_188_analog_matrix_inversion_thermal_quench",
+      "name": "Analog Matrix Inversion Thermal Quench & Flash Freeze",
+      "family": "Family XLVII: Neuromorphic Memristive Crossbar Arrays for Sub-Nanosecond Level-3 Order Book Matrix Inversion (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "analog_thermal_quench_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_189_zk_mpc_dark_pool_private_settlement",
+      "name": "Zero-Knowledge Multi-Party Computation (zk-MPC) Private Dark Pool Settlement",
+      "family": "Family XLVIII: Zero-Knowledge Multi-Party Computation (zk-MPC) Dark Pools with Provable Zero Information Leakage (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "latency_ms",
+        "lead_bps",
+        "triangular_lead_bonus_bps",
+        "zk_mpc_info_leakage_bps"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_190_pedersen_commitment_blinding_breach",
+      "name": "Pedersen Commitment Blinding Failure & Information Leakage Vulnerability",
+      "family": "Family XLVIII: Zero-Knowledge Multi-Party Computation (zk-MPC) Dark Pools with Provable Zero Information Leakage (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "pedersen_blinding_breach_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_191_garbled_circuit_prover_collusion_attack",
+      "name": "Garbled Circuit Prover Collusion & Adversarial MEV Front-Running",
+      "family": "Family XLVIII: Zero-Knowledge Multi-Party Computation (zk-MPC) Dark Pools with Provable Zero Information Leakage (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "garbled_circuit_collusion_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_192_total_universal_multiverse_entropy_extinction",
+      "name": "Total Universal Systemic Multiverse Entropy Extinction & Zero-State Nullification",
+      "family": "Family XLVIII: Zero-Knowledge Multi-Party Computation (zk-MPC) Dark Pools with Provable Zero Information Leakage (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "total_multiverse_entropy_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_193_qnm_cavity_optomechanics_dispersion",
+      "name": "Non-Hermitian Quasi-Normal Mode (QNM) Cavity Optomechanics (<400fs Dispersion Sensing)",
+      "family": "Family XLIX: Non-Hermitian Cavity Optomechanics & QNM Liquidity Dispersion (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "latency_ms",
+        "lead_bps",
+        "qnm_dispersion_ratio",
+        "triangular_lead_bonus_bps"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_194_radiation_pressure_instability_shock",
+      "name": "Radiation Pressure Parametric Instability & Sudden Liquidity Vaporization",
+      "family": "Family XLIX: Non-Hermitian Cavity Optomechanics & QNM Liquidity Dispersion (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "radiation_pressure_shock_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_195_photonic_crystal_nanocavity_thermal_runaway",
+      "name": "Photonic Crystal Nanocavity Thermal Runaway & Feedback Decoupling",
+      "family": "Family XLIX: Non-Hermitian Cavity Optomechanics & QNM Liquidity Dispersion (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "nanocavity_thermal_runaway_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_196_optomechanical_exceptional_point_annihilation",
+      "name": "Optomechanical Exceptional Point Annihilation & Phase Disruption",
+      "family": "Family XLIX: Non-Hermitian Cavity Optomechanics & QNM Liquidity Dispersion (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "optomechanical_ep_annihilation_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_197_fqhe_anyonic_edge_settlement",
+      "name": "Fractional Quantum Hall Effect (FQHE) Anyonic Edge-Current Settlement Bridge",
+      "family": "Family L: Fractional Quantum Hall Effect & Anyonic Edge Settlement (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "latency_ms",
+        "lead_bps",
+        "triangular_lead_bonus_bps"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_198_chiral_edge_state_scattering_rupture",
+      "name": "Chiral Edge State Backscattering & Cross-Chain Reorg Breach",
+      "family": "Family L: Fractional Quantum Hall Effect & Anyonic Edge Settlement (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "chiral_edge_scattering_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_199_fractional_quasiparticle_charge_dissipation",
+      "name": "Fractional Quasiparticle e/3 Charge Dissipation & Bridge Jamming",
+      "family": "Family L: Fractional Quantum Hall Effect & Anyonic Edge Settlement (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "quasiparticle_dissipation_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_200_topological_chern_number_inversion",
+      "name": "Topological Chern Number Topological Inversion & Asset Freezing",
+      "family": "Family L: Fractional Quantum Hall Effect & Anyonic Edge Settlement (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "chern_number_inversion_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_201_hyperbolic_ricci_soliton_synchronization",
+      "name": "Hyperbolic Ricci Soliton Flow for Cross-Order-Book Curvature Synchronization",
+      "family": "Family LI: Hyperbolic Ricci Soliton Multi-Asset Curvature Synchronization (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "latency_ms",
+        "lead_bps",
+        "ricci_soliton_gradient",
+        "triangular_lead_bonus_bps"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_202_shrinking_ricci_soliton_singularity",
+      "name": "Shrinking Ricci Soliton Finite-Time Singularity & Multi-Book Flash Collapse",
+      "family": "Family LI: Hyperbolic Ricci Soliton Multi-Asset Curvature Synchronization (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "shrinking_soliton_shock_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_203_riemannian_metric_tensor_anisotropy",
+      "name": "Riemannian Metric Tensor Degeneracy & Non-Uniform Slippage Tear",
+      "family": "Family LI: Hyperbolic Ricci Soliton Multi-Asset Curvature Synchronization (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "metric_tensor_anisotropy_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_204_cross_asset_order_flow_curvature_decoupling",
+      "name": "Cross-Asset Order Flow Geometric Decoupling & Basis Rupture",
+      "family": "Family LI: Hyperbolic Ricci Soliton Multi-Asset Curvature Synchronization (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "order_flow_curvature_decoupling_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_205_gravitational_lensing_phase_synchronization",
+      "name": "Relativistic Gravitational Lensing Phase Corrections for Deep-Space Mesh",
+      "family": "Family LII: Relativistic Gravitational Lensing Phase Synchronization (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "latency_ms",
+        "lead_bps",
+        "lensing_phase_offset_ps",
+        "triangular_lead_bonus_bps"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_206_schwarzschild_geodesic_deflection_drift",
+      "name": "Schwarzschild Geodesic Ray Deflection & Sub-Picosecond Time Slip",
+      "family": "Family LII: Relativistic Gravitational Lensing Phase Synchronization (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "schwarzschild_deflection_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_207_shapiro_time_delay_orbital_jitter",
+      "name": "Shapiro Gravitational Time Delay & Interplanetary Satellite Clock Jitter",
+      "family": "Family LII: Relativistic Gravitational Lensing Phase Synchronization (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "shapiro_delay_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_208_frame_dragging_lense_thirring_precession",
+      "name": "Kerr Frame-Dragging (Lense-Thirring) Precession Clock Arbitration Lockout",
+      "family": "Family LII: Relativistic Gravitational Lensing Phase Synchronization (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "lense_thirring_lock_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_209_neuromorphic_astrocyte_event_filtering",
+      "name": "Neuromorphic Spiking Astrocyte-Neuron Network (<1.2ns Event Stream Filtering)",
+      "family": "Family LIII: Neuromorphic Spiking Astrocyte-Neuron Event Networks (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "astrocyte_calcium_saturation",
+        "latency_ms",
+        "lead_bps",
+        "triangular_lead_bonus_bps"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_210_tripartite_synapse_calcium_wave_saturation",
+      "name": "Tripartite Synapse Intracellular Calcium Wave Saturation & Spike Deadlock",
+      "family": "Family LIII: Neuromorphic Spiking Astrocyte-Neuron Event Networks (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "astrocyte_calcium_saturation",
+        "tripartite_synapse_calcium_wave_saturation_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_211_gliotransmitter_depletion_noise_cascade",
+      "name": "Gliotransmitter Exocytotic Depletion & False Spike Toxicity Cascade",
+      "family": "Family LIII: Neuromorphic Spiking Astrocyte-Neuron Event Networks (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "gliotransmitter_depletion_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_212_homeostatic_plasticity_threshold_breakdown",
+      "name": "Homeostatic Synaptic Plasticity Threshold Breakdown & Sensory Overload",
+      "family": "Family LIII: Neuromorphic Spiking Astrocyte-Neuron Event Networks (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "homeostatic_plasticity_breakdown_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_213_zk_fhe_succinct_consensus_engine",
+      "name": "Zero-Knowledge Fully Homomorphic Encrypted (zk-FHE) Multi-Prover Succinct Consensus",
+      "family": "Family LIV: Zero-Knowledge Fully Homomorphic Succinct Consensus (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "latency_ms",
+        "lead_bps",
+        "tfhe_bootstrap_noise_ratio",
+        "triangular_lead_bonus_bps"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_214_tfhe_gate_bootstrapping_noise_overflow",
+      "name": "TFHE Blind Rotation Gate Bootstrapping Noise Overflow & Decryption Failure",
+      "family": "Family LIV: Zero-Knowledge Fully Homomorphic Succinct Consensus (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "tfhe_noise_overflow_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_215_plonky3_recursive_stark_prover_timeout",
+      "name": "Plonky3 Recursive STARK Prover Timeout & Block Inclusion Exclusion",
+      "family": "Family LIV: Zero-Knowledge Fully Homomorphic Succinct Consensus (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "plonky3_timeout_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_216_total_omniverse_systemic_entanglement_quench",
+      "name": "Total Universal Omniverse Systemic Entanglement Quench & Absolute Zero Annihilation",
+      "family": "Family LIV: Zero-Knowledge Fully Homomorphic Succinct Consensus (NEW)",
+      "status": "legacy_synthetic",
+      "claim_ceiling": "C0 mechanism mapping; C1 synthetic flag checks",
+      "synthetic_fields": [
+        "total_omniverse_quench_flag"
+      ],
+      "operational_correspondence_verified": false,
+      "obligation": "Measure the proposed variables and validate correspondence; synthetic flags do not establish a real mechanism."
+    },
+    {
+      "id": "regime_217_bulk_black_hole_horizon_evaporation",
+      "name": "Bulk Black Hole Horizon Evaporation",
+      "family": "Family 55: Holographic AdS/CFT Duality for Limit-Order-Book Dual Conformal Mapping",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 research hypothesis",
+      "synthetic_fields": [],
+      "operational_correspondence_verified": false,
+      "source": "https://arxiv.org/abs/hep-th/9711200",
+      "id_provenance": "Assigned in risk-atlas-v1; original Section 7 supplied titles without IDs.",
+      "original_section7_label": true,
+      "obligation": "No executable physical/scientific backend; establish feasibility, measurements, correspondence and independent controls."
+    },
+    {
+      "id": "regime_218_boundary_conformal_symmetry_rupture",
+      "name": "Boundary Conformal Symmetry Rupture",
+      "family": "Family 55: Holographic AdS/CFT Duality for Limit-Order-Book Dual Conformal Mapping",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 research hypothesis",
+      "synthetic_fields": [],
+      "operational_correspondence_verified": false,
+      "source": "https://arxiv.org/abs/hep-th/9711200",
+      "id_provenance": "Assigned in risk-atlas-v1; original Section 7 supplied titles without IDs.",
+      "original_section7_label": true,
+      "obligation": "No executable physical/scientific backend; establish feasibility, measurements, correspondence and independent controls."
+    },
+    {
+      "id": "regime_219_non_abelian_anyonic_braiding_phase_decoherence",
+      "name": "Non-Abelian Anyonic Braiding Phase Decoherence",
+      "family": "Family 56: Topologically Protected Non-Abelian Majorana Zero-Mode Braiding for Zero-Loss Memory Registers",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 research hypothesis",
+      "synthetic_fields": [],
+      "operational_correspondence_verified": false,
+      "source": "https://arxiv.org/abs/0707.1889",
+      "id_provenance": "Assigned in risk-atlas-v1; original Section 7 supplied titles without IDs.",
+      "original_section7_label": true,
+      "obligation": "No executable physical/scientific backend; establish feasibility, measurements, correspondence and independent controls."
+    },
+    {
+      "id": "regime_220_topological_gap_collapse",
+      "name": "Topological Gap Collapse",
+      "family": "Family 56: Topologically Protected Non-Abelian Majorana Zero-Mode Braiding for Zero-Loss Memory Registers",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 research hypothesis",
+      "synthetic_fields": [],
+      "operational_correspondence_verified": false,
+      "source": "https://arxiv.org/abs/0707.1889",
+      "id_provenance": "Assigned in risk-atlas-v1; original Section 7 supplied titles without IDs.",
+      "original_section7_label": true,
+      "obligation": "No executable physical/scientific backend; establish feasibility, measurements, correspondence and independent controls."
+    },
+    {
+      "id": "regime_221_landauer_thermal_runaway_throttling",
+      "name": "Landauer Thermal Runaway Throttling",
+      "family": "Family 57: Thermodynamic Landauer-Limit Micro-Joule Zero-Dissipation Reversible Logic",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 research hypothesis",
+      "synthetic_fields": [],
+      "operational_correspondence_verified": false,
+      "source": "https://ieeexplore.ieee.org/abstract/document/5392446",
+      "id_provenance": "Assigned in risk-atlas-v1; original Section 7 supplied titles without IDs.",
+      "original_section7_label": true,
+      "obligation": "No executable physical/scientific backend; establish feasibility, measurements, correspondence and independent controls."
+    },
+    {
+      "id": "regime_222_reversible_logic_pipeline_desynchronization",
+      "name": "Reversible Logic Pipeline Desynchronization",
+      "family": "Family 57: Thermodynamic Landauer-Limit Micro-Joule Zero-Dissipation Reversible Logic",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 research hypothesis",
+      "synthetic_fields": [],
+      "operational_correspondence_verified": false,
+      "source": "https://ieeexplore.ieee.org/abstract/document/5392446",
+      "id_provenance": "Assigned in risk-atlas-v1; original Section 7 supplied titles without IDs.",
+      "original_section7_label": true,
+      "obligation": "No executable physical/scientific backend; establish feasibility, measurements, correspondence and independent controls."
+    },
+    {
+      "id": "regime_223_tidal_earth_crust_seismic_strain_drift",
+      "name": "Tidal Earth Crust Seismic Strain Drift",
+      "family": "Family 58: Gravitational Wave Interferometric Quadrupole Stress Detectors for Seismic Latency Compensation",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 research hypothesis",
+      "synthetic_fields": [],
+      "operational_correspondence_verified": false,
+      "source": "https://www.ligo.caltech.edu/LA/page/what-is-interferometer",
+      "id_provenance": "Assigned in risk-atlas-v1; original Section 7 supplied titles without IDs.",
+      "original_section7_label": true,
+      "obligation": "No executable physical/scientific backend; establish feasibility, measurements, correspondence and independent controls."
+    },
+    {
+      "id": "regime_224_interferometric_reference_arm_phase_squeeze",
+      "name": "Interferometric Reference Arm Phase Squeeze",
+      "family": "Family 58: Gravitational Wave Interferometric Quadrupole Stress Detectors for Seismic Latency Compensation",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 research hypothesis",
+      "synthetic_fields": [],
+      "operational_correspondence_verified": false,
+      "source": "https://www.ligo.caltech.edu/LA/page/what-is-interferometer",
+      "id_provenance": "Assigned in risk-atlas-v1; original Section 7 supplied titles without IDs.",
+      "original_section7_label": true,
+      "obligation": "No executable physical/scientific backend; establish feasibility, measurements, correspondence and independent controls."
+    },
+    {
+      "id": "regime_225_neutrino_detector_scintillation_poisson_jitter",
+      "name": "Neutrino Detector Scintillation Poisson Jitter",
+      "family": "Family 59: Neutrino-Based Direct Trans-Earth Low-Latency Communication Channels",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 research hypothesis",
+      "synthetic_fields": [],
+      "operational_correspondence_verified": false,
+      "source": "https://arxiv.org/abs/1203.2847",
+      "id_provenance": "Assigned in risk-atlas-v1; original Section 7 supplied titles without IDs.",
+      "original_section7_label": true,
+      "obligation": "No executable physical/scientific backend; establish feasibility, measurements, correspondence and independent controls."
+    },
+    {
+      "id": "regime_226_core_mantle_density_variation_beam_dispersion",
+      "name": "Core-Mantle Density Variation Beam Dispersion",
+      "family": "Family 59: Neutrino-Based Direct Trans-Earth Low-Latency Communication Channels",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 research hypothesis",
+      "synthetic_fields": [],
+      "operational_correspondence_verified": false,
+      "source": "https://arxiv.org/abs/1203.2847",
+      "id_provenance": "Assigned in risk-atlas-v1; original Section 7 supplied titles without IDs.",
+      "original_section7_label": true,
+      "obligation": "No executable physical/scientific backend; establish feasibility, measurements, correspondence and independent controls."
+    },
+    {
+      "id": "regime_227_environmental_pointer_state_decoherence_delay",
+      "name": "Environmental Pointer State Decoherence Delay",
+      "family": "Family 60: Quantum Darwinism Epistemic Decoherence Resolvers for Predictive Equilibrium Selection",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 research hypothesis",
+      "synthetic_fields": [],
+      "operational_correspondence_verified": false,
+      "source": "https://arxiv.org/abs/0903.5082",
+      "id_provenance": "Assigned in risk-atlas-v1; original Section 7 supplied titles without IDs.",
+      "original_section7_label": true,
+      "obligation": "No executable physical/scientific backend; establish feasibility, measurements, correspondence and independent controls."
+    },
+    {
+      "id": "regime_228_quantum_zeno_freezing_trap",
+      "name": "Quantum Zeno Freezing Trap",
+      "family": "Family 60: Quantum Darwinism Epistemic Decoherence Resolvers for Predictive Equilibrium Selection",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 research hypothesis",
+      "synthetic_fields": [],
+      "operational_correspondence_verified": false,
+      "source": "https://arxiv.org/abs/0903.5082",
+      "id_provenance": "Assigned in risk-atlas-v1; original Section 7 supplied titles without IDs.",
+      "original_section7_label": true,
+      "obligation": "No executable physical/scientific backend; establish feasibility, measurements, correspondence and independent controls."
+    },
+    {
+      "id": "regime_229_order_book_representation_correspondence_failure",
+      "name": "Order-Book Representation Correspondence Failure",
+      "family": "Family 55: Holographic AdS/CFT Duality for Limit-Order-Book Dual Conformal Mapping",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 research hypothesis",
+      "synthetic_fields": [],
+      "operational_correspondence_verified": false,
+      "source": "https://arxiv.org/abs/hep-th/9711200",
+      "id_provenance": "Assigned in risk-atlas-v1; original Section 7 supplied titles without IDs.",
+      "original_section7_label": false,
+      "obligation": "No executable physical/scientific backend; establish feasibility, measurements, correspondence and independent controls."
+    },
+    {
+      "id": "regime_230_holographic_proxy_null_control_parity",
+      "name": "Holographic Proxy Null-Control Parity",
+      "family": "Family 55: Holographic AdS/CFT Duality for Limit-Order-Book Dual Conformal Mapping",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 research hypothesis",
+      "synthetic_fields": [],
+      "operational_correspondence_verified": false,
+      "source": "https://arxiv.org/abs/hep-th/9711200",
+      "id_provenance": "Assigned in risk-atlas-v1; original Section 7 supplied titles without IDs.",
+      "original_section7_label": false,
+      "obligation": "No executable physical/scientific backend; establish feasibility, measurements, correspondence and independent controls."
+    },
+    {
+      "id": "regime_231_memory_error_correction_overhead_budget_breach",
+      "name": "Memory Error-Correction Overhead Budget Breach",
+      "family": "Family 56: Topologically Protected Non-Abelian Majorana Zero-Mode Braiding for Zero-Loss Memory Registers",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 research hypothesis",
+      "synthetic_fields": [],
+      "operational_correspondence_verified": false,
+      "source": "https://arxiv.org/abs/0707.1889",
+      "id_provenance": "Assigned in risk-atlas-v1; original Section 7 supplied titles without IDs.",
+      "original_section7_label": false,
+      "obligation": "No executable physical/scientific backend; establish feasibility, measurements, correspondence and independent controls."
+    },
+    {
+      "id": "regime_232_unmeasured_braiding_error_sensor_failure",
+      "name": "Unmeasured Braiding-Error Sensor Failure",
+      "family": "Family 56: Topologically Protected Non-Abelian Majorana Zero-Mode Braiding for Zero-Loss Memory Registers",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 research hypothesis",
+      "synthetic_fields": [],
+      "operational_correspondence_verified": false,
+      "source": "https://arxiv.org/abs/0707.1889",
+      "id_provenance": "Assigned in risk-atlas-v1; original Section 7 supplied titles without IDs.",
+      "original_section7_label": false,
+      "obligation": "No executable physical/scientific backend; establish feasibility, measurements, correspondence and independent controls."
+    },
+    {
+      "id": "regime_233_energy_measurement_calibration_failure",
+      "name": "Energy-Measurement Calibration Failure",
+      "family": "Family 57: Thermodynamic Landauer-Limit Micro-Joule Zero-Dissipation Reversible Logic",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 research hypothesis",
+      "synthetic_fields": [],
+      "operational_correspondence_verified": false,
+      "source": "https://ieeexplore.ieee.org/abstract/document/5392446",
+      "id_provenance": "Assigned in risk-atlas-v1; original Section 7 supplied titles without IDs.",
+      "original_section7_label": false,
+      "obligation": "No executable physical/scientific backend; establish feasibility, measurements, correspondence and independent controls."
+    },
+    {
+      "id": "regime_234_reversible_compute_throughput_baseline_failure",
+      "name": "Reversible-Compute Throughput Baseline Failure",
+      "family": "Family 57: Thermodynamic Landauer-Limit Micro-Joule Zero-Dissipation Reversible Logic",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 research hypothesis",
+      "synthetic_fields": [],
+      "operational_correspondence_verified": false,
+      "source": "https://ieeexplore.ieee.org/abstract/document/5392446",
+      "id_provenance": "Assigned in risk-atlas-v1; original Section 7 supplied titles without IDs.",
+      "original_section7_label": false,
+      "obligation": "No executable physical/scientific backend; establish feasibility, measurements, correspondence and independent controls."
+    },
+    {
+      "id": "regime_235_sensor_to_network_latency_correspondence_failure",
+      "name": "Sensor-to-Network Latency Correspondence Failure",
+      "family": "Family 58: Gravitational Wave Interferometric Quadrupole Stress Detectors for Seismic Latency Compensation",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 research hypothesis",
+      "synthetic_fields": [],
+      "operational_correspondence_verified": false,
+      "source": "https://www.ligo.caltech.edu/LA/page/what-is-interferometer",
+      "id_provenance": "Assigned in risk-atlas-v1; original Section 7 supplied titles without IDs.",
+      "original_section7_label": false,
+      "obligation": "No executable physical/scientific backend; establish feasibility, measurements, correspondence and independent controls."
+    },
+    {
+      "id": "regime_236_seismic_sensor_cost_utility_budget_failure",
+      "name": "Seismic Sensor Cost-Utility Budget Failure",
+      "family": "Family 58: Gravitational Wave Interferometric Quadrupole Stress Detectors for Seismic Latency Compensation",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 research hypothesis",
+      "synthetic_fields": [],
+      "operational_correspondence_verified": false,
+      "source": "https://www.ligo.caltech.edu/LA/page/what-is-interferometer",
+      "id_provenance": "Assigned in risk-atlas-v1; original Section 7 supplied titles without IDs.",
+      "original_section7_label": false,
+      "obligation": "No executable physical/scientific backend; establish feasibility, measurements, correspondence and independent controls."
+    },
+    {
+      "id": "regime_237_neutrino_channel_throughput_infeasibility",
+      "name": "Neutrino Channel Throughput Infeasibility",
+      "family": "Family 59: Neutrino-Based Direct Trans-Earth Low-Latency Communication Channels",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 research hypothesis",
+      "synthetic_fields": [],
+      "operational_correspondence_verified": false,
+      "source": "https://arxiv.org/abs/1203.2847",
+      "id_provenance": "Assigned in risk-atlas-v1; original Section 7 supplied titles without IDs.",
+      "original_section7_label": false,
+      "obligation": "No executable physical/scientific backend; establish feasibility, measurements, correspondence and independent controls."
+    },
+    {
+      "id": "regime_238_unverified_end_to_end_latency_claim",
+      "name": "Unverified End-to-End Latency Claim",
+      "family": "Family 59: Neutrino-Based Direct Trans-Earth Low-Latency Communication Channels",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 research hypothesis",
+      "synthetic_fields": [],
+      "operational_correspondence_verified": false,
+      "source": "https://arxiv.org/abs/1203.2847",
+      "id_provenance": "Assigned in risk-atlas-v1; original Section 7 supplied titles without IDs.",
+      "original_section7_label": false,
+      "obligation": "No executable physical/scientific backend; establish feasibility, measurements, correspondence and independent controls."
+    },
+    {
+      "id": "regime_239_quantum_to_market_correspondence_failure",
+      "name": "Quantum-to-Market Correspondence Failure",
+      "family": "Family 60: Quantum Darwinism Epistemic Decoherence Resolvers for Predictive Equilibrium Selection",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 research hypothesis",
+      "synthetic_fields": [],
+      "operational_correspondence_verified": false,
+      "source": "https://arxiv.org/abs/0903.5082",
+      "id_provenance": "Assigned in risk-atlas-v1; original Section 7 supplied titles without IDs.",
+      "original_section7_label": false,
+      "obligation": "No executable physical/scientific backend; establish feasibility, measurements, correspondence and independent controls."
+    },
+    {
+      "id": "regime_240_predictive_equilibrium_held_out_null_parity",
+      "name": "Predictive Equilibrium Held-Out Null Parity",
+      "family": "Family 60: Quantum Darwinism Epistemic Decoherence Resolvers for Predictive Equilibrium Selection",
+      "status": "catalog_only",
+      "claim_ceiling": "C0 research hypothesis",
+      "synthetic_fields": [],
+      "operational_correspondence_verified": false,
+      "source": "https://arxiv.org/abs/0903.5082",
+      "id_provenance": "Assigned in risk-atlas-v1; original Section 7 supplied titles without IDs.",
+      "original_section7_label": false,
+      "obligation": "No executable physical/scientific backend; establish feasibility, measurements, correspondence and independent controls."
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "positions": [{"symbol": "EQUITY", "notional": 1000}, {"symbol": "SECTOR", "notional": 500}],
+  "cash": 500,
+  "max_loss": 200,
+  "scenarios": [
+    {"id": "gap", "shocks": {"EQUITY": -0.2, "SECTOR": -0.3}, "transaction_cost": 5},
+    {"id": "flat", "shocks": {"EQUITY": 0, "SECTOR": 0}, "transaction_cost": 2}
+  ]
+}

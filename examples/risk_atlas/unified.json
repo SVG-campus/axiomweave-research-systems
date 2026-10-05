@@ -1,0 +1,7 @@
+{
+  "question": "Identify missing stock-risk and alert-delivery evidence and propose one falsifiable experiment",
+  "domain": "stocks",
+  "observations": {},
+  "round": 1,
+  "evidence": ["Illustrative supplied input only; no real portfolio or market data"]
+}

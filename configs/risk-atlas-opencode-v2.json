@@ -1,0 +1,18 @@
+{
+  "mcp": {
+    "servers": {
+      "axiomweave-risk-atlas": {
+        "type": "local",
+        "command": ["python", "/ABSOLUTE/PATH/scripts/risk_atlas_mcp.py", "--profile", "atlas"],
+        "disabled": true,
+        "timeout": {"startup": 30000, "execution": 30000}
+      },
+      "axiomweave-unified-research": {
+        "type": "local",
+        "command": ["python", "/ABSOLUTE/PATH/scripts/risk_atlas_mcp.py", "--profile", "unified"],
+        "disabled": true,
+        "timeout": {"startup": 30000, "execution": 30000}
+      }
+    }
+  }
+}

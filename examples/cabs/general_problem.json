@@ -1,0 +1,26 @@
+{
+  "problem": "Design a scheduling method with competing resource, uncertainty and service objectives",
+  "dimensions": {
+    "domain": "operations and decision making",
+    "space": "a finite network",
+    "time": "an explicit planning horizon",
+    "uncertainty": "bounded demand intervals",
+    "objective": "a vector of cost, delay and reliability",
+    "meaning": "owner-specified requirements",
+    "authority": "local proposal only"
+  },
+  "atoms": [
+    {"id": "frame_requirements", "input": "question", "output": "specification", "capabilities": ["requirements"]},
+    {"id": "generate_schedules", "input": "specification", "output": "candidate", "capabilities": ["generate"]},
+    {"id": "check_constraints", "input": "candidate", "output": "evidence", "capabilities": ["constraints"]},
+    {"id": "independent_evaluation", "input": "evidence", "output": "certificate", "capabilities": ["independent_check"]}
+  ],
+  "input_type": "question",
+  "output_type": "certificate",
+  "required_capabilities": ["requirements", "generate", "constraints", "independent_check"],
+  "operators": ["sequence", "portfolio"],
+  "max_leaves": 4,
+  "strategy": "exhaustive",
+  "max_candidates": 4096,
+  "semantic_obligations": ["Supply actual schedule generator and independent constraint/evaluation backends", "Dimensions are declared metadata until a domain evaluator checks their meaning"]
+}

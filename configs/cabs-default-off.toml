@@ -1,0 +1,4 @@
+[mcp_servers.axiomweave-cabs]
+command = "python"
+args = ["/ABSOLUTE/PATH/axiomweave-research-systems/scripts/cabs_mcp.py"]
+enabled = false

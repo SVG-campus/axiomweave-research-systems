@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "coverage_claim": "Open multi-axis schema and representative seeds; no exhaustive problem ontology",
+  "dimensions_are": "Problem descriptors and computational size variables; physical dimensions are only one case",
+  "question_forms": ["prove", "refute", "construct", "compute", "estimate", "predict", "explain", "identify", "cause", "optimize", "control", "design", "diagnose", "decide", "interpret", "evaluate"],
+  "domain_seeds": ["logic and foundations", "mathematics", "computation", "physical science", "engineering", "biology", "medicine", "economics", "social systems", "policy", "history", "language", "art and design", "personal decisions"],
+  "axes": {
+    "representation": ["symbolic", "logical", "numeric", "graph", "geometric", "statistical", "textual", "hybrid", "unknown"],
+    "input_scope": ["finite explicit", "finite implicit", "countably infinite", "continuous", "unknown"],
+    "dimensionality": ["fixed", "grows with input", "infinite-dimensional", "unknown"],
+    "time": ["static", "finite horizon", "unbounded horizon", "nonstationary", "unknown"],
+    "observability": ["full", "partial", "latent", "unknown"],
+    "uncertainty": ["exact", "probabilistic", "bounded", "adversarial", "unknown"],
+    "objective": ["single", "multiobjective", "feasibility", "proof", "interpretation", "owner-valued"],
+    "constraints": ["hard", "soft", "resource", "semantic", "safety", "authority"],
+    "evidence": ["formal", "certified numeric", "synthetic", "observational", "held-out", "prospective", "human adjudication", "missing"],
+    "decidability": ["proved decidable", "proved undecidable", "open", "unknown"],
+    "complexity": ["constant", "logarithmic", "polynomial", "parameterized", "exponential", "factorial", "noncomputable", "unknown"]
+  },
+  "new_axis_policy": "Admit arbitrary new bounded descriptors; require a typed grammar, meaning review, evaluator, cost variables and negative controls before domain promotion",
+  "curse_of_dimensionality": "With q choices in each of d independent dimensions, a full grid has q^d points; d must stay an explicit variable",
+  "computational_cost_is_separate_from": ["physical scaling", "statistical sample complexity", "scientific validity", "semantic truth", "owner utility"],
+  "all_possible_questions_covered": false
+}

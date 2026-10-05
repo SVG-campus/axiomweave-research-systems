@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "axiomweave-risk-atlas": {
+      "command": "python",
+      "args": ["/ABSOLUTE/PATH/scripts/risk_atlas_mcp.py", "--profile", "atlas"],
+      "disabled": true
+    },
+    "axiomweave-unified-research": {
+      "command": "python",
+      "args": ["/ABSOLUTE/PATH/scripts/risk_atlas_mcp.py", "--profile", "unified"],
+      "disabled": true
+    }
+  }
+}

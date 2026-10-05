@@ -1,0 +1,33 @@
+{
+  "timestamp_utc": "2026-10-05T17:46:45.127166+00:00",
+  "claim_ceiling": "C1 finite type/search/protocol/cost/exact-algebra mechanics",
+  "default_public_sections": 21,
+  "public_tests_discovered": 33,
+  "public_optional_backend_skips": 2,
+  "new_cabs_controls": 10,
+  "public_tests_passed": true,
+  "mcp_official_sdk_verified": true,
+  "mcp_tools": [
+    "cabs_catalog",
+    "cabs_search",
+    "cabs_compose_costs"
+  ],
+  "positive_sdk_calls": 3,
+  "negative_sdk_calls": 1,
+  "temporary_client_closed": true,
+  "global_profiles_changed": false,
+  "ide_panel_discovery_verified": false,
+  "domain_solution_count": 0,
+  "all_possible_questions_covered": false,
+  "cost_models_ceiling": "C0 conditional supplied annotations",
+  "independent_scientific_adjudication": false,
+  "sources": {
+    "scripts/compositional_search.py": "e4127e7c7a1cf67beae850cb407836451735bda0633f1d8e20cc216f693eff5d",
+    "scripts/cabs_mcp.py": "409fb8df61e31d63c1d43ae5b0573215f78ab51fcad3942f71a37f667d0a3881",
+    "scripts/build_search_registry.py": "2bf0d92c0bbe55e327ab0733c92796594cf70b39561472bf57c4f227cab40aef",
+    "scripts/test_compositional_search.py": "5b66ed59bfeb05896a19b8cd79d36f872e9da165dbdef0edcd90c56266d9246d",
+    "catalog/search_suites.json": "d73f48972ccbc6db8a13bc0f9c6db58f9a0703fcb9e9db51918bdf79e746b8d6",
+    "catalog/problem_space.json": "df9e69f3388e13cdc462c412df28e7250fa209e4d357f4358f7ba29b1f58b0bc",
+    "CABS_PROTOCOL.md": "b5b0160174ccdaedd658c5b937efbae1cac6664c6d24c184ea7bba625f2b64ac"
+  }
+}

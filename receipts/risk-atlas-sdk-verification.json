@@ -1,0 +1,153 @@
+{
+  "asof_utc": "2026-10-05T23:30:06.586532+00:00",
+  "profiles": [
+    {
+      "profile": "atlas",
+      "transport": "actual mcp Python SDK stdio",
+      "tools": [
+        {
+          "name": "atlas_catalog",
+          "input_sha256": "63ec8f36fa66e93df4ad6fb62b4fff224dabb2fa6b2aa68f8b96d5e9bdef2638",
+          "output_sha256": "80670b63e8303113f07a21d3724253f86994b40800373ece1e151835f01b6922",
+          "passed": true
+        },
+        {
+          "name": "atlas_frame_problem",
+          "input_sha256": "fdf5e7c4b583a5c4939983a2f796660bc9db0672cc8d5ec5ae3f45358933c045",
+          "output_sha256": "173c1866fc1936a14c4667f965da916b83d9229b4c7f02373d893bdbdec10039",
+          "passed": true
+        },
+        {
+          "name": "atlas_probe",
+          "input_sha256": "30b32879307c3c6a1248512b927ab60ce1761b2a22ff2677dc25deb3f450adb6",
+          "output_sha256": "b093f91241f009ea435b9668a6c3369135a1c16bf80163c700aeb857a7ce4c0c",
+          "passed": true
+        },
+        {
+          "name": "atlas_scenario_probe",
+          "input_sha256": "037b0924b907a76961d6888e1e7c43cf4e99092879ac35d186eb0e57c0e2e72e",
+          "output_sha256": "2792744a96bc22155515f064a3cff31299b4ad8e1b51eaf13b48c5830e163543",
+          "passed": true
+        },
+        {
+          "name": "atlas_portfolio_stress",
+          "input_sha256": "58879eda1e8b7e783b53be484634b8ca045cecddda5cd4919e7bd48269aaf26f",
+          "output_sha256": "df0fd6c0440e030e25775515d62bd241e0e3440f0a1612caef27437dbdde56b6",
+          "passed": true
+        },
+        {
+          "name": "atlas_robust_search",
+          "input_sha256": "6f662235f1263a51eb5185dae12f03afdd1404a7518025d7da2a528dbdd09fd8",
+          "output_sha256": "2256aca04419afd434a483d3276a144ad5e66e17a0de27538feebe128903867f",
+          "passed": true
+        },
+        {
+          "name": "atlas_frontiers",
+          "input_sha256": "facd7a42d39e2f0c0b4d34c0bdbfaef5efe631f44a44893b4f7fa5133425752c",
+          "output_sha256": "975e79710db1e670cb284c2b5911beef3b4d0ad81db5878265d05118b05a581b",
+          "passed": true
+        },
+        {
+          "name": "atlas_alert_activity",
+          "input_sha256": "05e5695115b74ecce3d287c4a679ddbc370b549c6ef5b21dfdff12b9e48fc49e",
+          "output_sha256": "1c19ba0def215de2b73a0babb9b2fe9dcdf5541995b7dabdbad80541c54d0f8a",
+          "passed": true
+        }
+      ],
+      "negotiated_protocol": "2025-11-25",
+      "invalid_type_rejected_and_server_survived": true,
+      "temporary_client_closed": true
+    },
+    {
+      "profile": "unified",
+      "transport": "actual mcp Python SDK stdio",
+      "tools": [
+        {
+          "name": "atlas_catalog",
+          "input_sha256": "63ec8f36fa66e93df4ad6fb62b4fff224dabb2fa6b2aa68f8b96d5e9bdef2638",
+          "output_sha256": "80670b63e8303113f07a21d3724253f86994b40800373ece1e151835f01b6922",
+          "passed": true
+        },
+        {
+          "name": "atlas_frame_problem",
+          "input_sha256": "fdf5e7c4b583a5c4939983a2f796660bc9db0672cc8d5ec5ae3f45358933c045",
+          "output_sha256": "173c1866fc1936a14c4667f965da916b83d9229b4c7f02373d893bdbdec10039",
+          "passed": true
+        },
+        {
+          "name": "atlas_probe",
+          "input_sha256": "30b32879307c3c6a1248512b927ab60ce1761b2a22ff2677dc25deb3f450adb6",
+          "output_sha256": "b093f91241f009ea435b9668a6c3369135a1c16bf80163c700aeb857a7ce4c0c",
+          "passed": true
+        },
+        {
+          "name": "atlas_scenario_probe",
+          "input_sha256": "037b0924b907a76961d6888e1e7c43cf4e99092879ac35d186eb0e57c0e2e72e",
+          "output_sha256": "2792744a96bc22155515f064a3cff31299b4ad8e1b51eaf13b48c5830e163543",
+          "passed": true
+        },
+        {
+          "name": "atlas_portfolio_stress",
+          "input_sha256": "58879eda1e8b7e783b53be484634b8ca045cecddda5cd4919e7bd48269aaf26f",
+          "output_sha256": "df0fd6c0440e030e25775515d62bd241e0e3440f0a1612caef27437dbdde56b6",
+          "passed": true
+        },
+        {
+          "name": "atlas_robust_search",
+          "input_sha256": "6f662235f1263a51eb5185dae12f03afdd1404a7518025d7da2a528dbdd09fd8",
+          "output_sha256": "2256aca04419afd434a483d3276a144ad5e66e17a0de27538feebe128903867f",
+          "passed": true
+        },
+        {
+          "name": "atlas_frontiers",
+          "input_sha256": "facd7a42d39e2f0c0b4d34c0bdbfaef5efe631f44a44893b4f7fa5133425752c",
+          "output_sha256": "975e79710db1e670cb284c2b5911beef3b4d0ad81db5878265d05118b05a581b",
+          "passed": true
+        },
+        {
+          "name": "atlas_alert_activity",
+          "input_sha256": "05e5695115b74ecce3d287c4a679ddbc370b549c6ef5b21dfdff12b9e48fc49e",
+          "output_sha256": "1c19ba0def215de2b73a0babb9b2fe9dcdf5541995b7dabdbad80541c54d0f8a",
+          "passed": true
+        },
+        {
+          "name": "unified_probe",
+          "input_sha256": "33988b66658f96576e88a354b7038015ee098652973c244f4f2f7fa27d0d6b91",
+          "output_sha256": "40ab11855441e0e77326a3e59d833f04bfd4c75075515bf93c3abc49a22d8eed",
+          "passed": true
+        },
+        {
+          "name": "unified_as3r_replay",
+          "input_sha256": "cbdef580f6754a07fd459acbe69ef3e4dd02205f9e3e9be6972626409441ce46",
+          "output_sha256": "a20e1c843556db55013918fc1e7475bfca0de37c66590752979c9e9d330dff11",
+          "passed": true
+        },
+        {
+          "name": "cabs_catalog",
+          "input_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "output_sha256": "38f4c24f113585cbbb7fa7a7ae81906cafd02602b0578af659ae363772b75c9b",
+          "passed": true
+        },
+        {
+          "name": "cabs_search",
+          "input_sha256": "b4d28cd0a248115500aed04a597cc57dff67702b3bc468a7be90a89240809ce1",
+          "output_sha256": "ce0898f46d54f642f47ee6d0b6b448b672695304c0c5fb52bcfa96d093670c8b",
+          "passed": true
+        },
+        {
+          "name": "cabs_compose_costs",
+          "input_sha256": "a1b8832a41200502d1d611b3fb3500956735bba3dbbe7cf576cd6126980b9d18",
+          "output_sha256": "0fb637b88e352680c1f301eb2eea3e34c7690e08b3167dc82b29705486348587",
+          "passed": true
+        }
+      ],
+      "negotiated_protocol": "2025-11-25",
+      "invalid_type_rejected_and_server_survived": true,
+      "material_questions_framed_with_actual_cabs": 7,
+      "temporary_client_closed": true
+    }
+  ],
+  "manifest_sha256": "9a86ca3179276c2b3e4fc0ec4b37a5432c923a57c64bc63a5785e305731149d0",
+  "as3r_executable_sha256": "af93a3240b38ecc8b41e707af6eda29b7dc82d98142c48a8d2c811cfbbaaf3e7",
+  "claim_ceiling": "C1 actual IPC and synthetic calculations; no prospective finance claim"
+}

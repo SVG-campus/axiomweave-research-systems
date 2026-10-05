@@ -1,0 +1,42 @@
+{
+  "asof_utc": "2026-10-05T23:44:53.414051+00:00",
+  "route": "One implementation owner and centralized read-only skeptical reviewer",
+  "manifest_sha256": "9a86ca3179276c2b3e4fc0ec4b37a5432c923a57c64bc63a5785e305731149d0",
+  "source_hashes": {
+    "scripts/compositional_search.py": "e4127e7c7a1cf67beae850cb407836451735bda0633f1d8e20cc216f693eff5d",
+    "scripts/cabs_mcp.py": "409fb8df61e31d63c1d43ae5b0573215f78ab51fcad3942f71a37f667d0a3881",
+    "catalog/search_suites.json": "d73f48972ccbc6db8a13bc0f9c6db58f9a0703fcb9e9db51918bdf79e746b8d6",
+    "scripts/risk_atlas.py": "51ebfd37265e76dd4bfd20455d2e68c263787cf9fa10d81d04350c33769385a1",
+    "scripts/risk_atlas_legacy.py": "9e2564a0b98806338c27a01e31eb900857a8af3f6a0292b8bdb96c2a8acec79d",
+    "scripts/risk_atlas_mcp.py": "b0935faaf4b02f2e01f6c376f48b6590dc6e341ee8dad2db1db2c49bbd6bf48d",
+    "catalog/risk_atlas_240.json": "9e692f7c60ce68bbbc220ea246f4cf12a71a370ae13cf750d320c7db277cec84"
+  },
+  "public_tests": 28,
+  "declared_scenarios": 240,
+  "declared_families": 60,
+  "catalog_only_new_scenarios": 24,
+  "operational_fault_cases": 24,
+  "missing_measurement_cases": 24,
+  "pairwise_fault_cases": 276,
+  "codex_native_discovery_and_call": true,
+  "opencode_runtime_connected": true,
+  "antigravity_runtime_discovery": "not verified; refresh/restart and inspect panel",
+  "sdk_tool_calls": 21,
+  "actual_cabs_questions_framed": 7,
+  "live_scan_regression_cases": 7,
+  "all_temporary_clients_closed": true,
+  "model_weight_changes": false,
+  "claim_ceiling": "C1 mechanics and integration; C2 observed logs; C0 scientific/financial utility",
+  "stop_rule": "Frozen declared scope achieved; prospective benefit needs later untouched evidence",
+  "live_scan_fixture_visibility": "Owner-private source fixture; seven checks are separate from 28 publicly reproducible tests",
+  "local_profile": "off",
+  "physical_frontier_backends_validated": 0,
+  "financial_utility_validated": false,
+  "reviewer_receipt_sha256": {
+    "FINAL_PROTOCOL_COMPATIBILITY_ADDENDUM.json": "f085cf71bda3d731a7d79bca8b7f75444bef20c7c803a739e676267dfc80cec5",
+    "negative_controls.json": "5b9cbf6e0d7160d38b18edc239c77f3addef1f78541255c34a6fde869f7e94fd",
+    "NEW_MCP_FINAL_REVIEW.json": "8425edfb245ec23df64c43b9141948a441033bbaa927885f7b88bf873fbef201"
+  },
+  "linux_public_tests": 28,
+  "linux_actual_stdio_probe": true
+}

@@ -1,0 +1,15 @@
+# Replace /ABSOLUTE/PATH with the repository root and use an absolute Python executable.
+[mcp_servers.axiomweave-risk-atlas]
+command = "python"
+args = ["/ABSOLUTE/PATH/scripts/risk_atlas_mcp.py", "--profile", "atlas"]
+enabled = false
+startup_timeout_sec = 20
+tool_timeout_sec = 30
+
+[mcp_servers.axiomweave-unified-research]
+command = "python"
+args = ["/ABSOLUTE/PATH/scripts/risk_atlas_mcp.py", "--profile", "unified"]
+enabled = false
+startup_timeout_sec = 20
+tool_timeout_sec = 30
+# Optional startup args: --as3-executable ABSOLUTE_EXE --as3-sha256 VERIFIED_SHA256
